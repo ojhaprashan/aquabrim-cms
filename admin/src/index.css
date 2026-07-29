@@ -87,14 +87,30 @@ label.checkbox input { width: auto; }
 /* ===== Login ===== */
 .login-wrap {
   min-height: 100vh; display: grid; place-items: center; padding: 24px;
+  position: relative; overflow: hidden;
   background:
-    radial-gradient(1100px 500px at 15% -10%, rgba(0, 108, 208, 0.22), transparent 60%),
-    radial-gradient(900px 500px at 110% 110%, rgba(0, 108, 208, 0.14), transparent 55%),
-    linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 100%);
+    radial-gradient(1200px 600px at 12% -15%, rgba(0, 108, 208, 0.38), transparent 55%),
+    radial-gradient(900px 520px at 115% 115%, rgba(0, 108, 208, 0.28), transparent 55%),
+    linear-gradient(155deg, #120e24 0%, var(--navy) 45%, var(--navy-2) 100%);
+}
+/* subtle dot grid, faded toward the edges */
+.login-wrap::before {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+}
+/* angled blue accent — echoes the site header's skewed brand banner */
+.login-wrap::after {
+  content: ''; position: absolute; top: -30%; left: -25%; width: 65%; height: 160%;
+  background: linear-gradient(90deg, rgba(0, 108, 208, 0.22), transparent);
+  transform: skewX(-18deg); pointer-events: none;
 }
 .login-card {
+  position: relative; z-index: 1;
   width: 380px; max-width: 100%; background: #fff; border-radius: 18px; padding: 34px 32px;
-  box-shadow: var(--shadow-lg); border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: var(--shadow-lg); border-top: 4px solid var(--primary);
 }
 .login-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 22px; }
 .login-brand .login-logo { width: 48px; height: 48px; object-fit: contain; }
