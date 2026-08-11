@@ -1,0 +1,1171 @@
+{
+  "seo": {
+    "metaTitle": "Water Level Controller Products | Buy Online | Aquabrim",
+    "metaDescription": "Browse Aquabrim's full range of water automation products — wireless controllers for homes, industrial multi-tank systems, alarms & accessories. Find the right fit for your setup.",
+    "canonical": "/products/"
+  },
+  "hero": {
+    "headingLine1": "Water Level Controller Products",
+    "headingLine2": "Smart Automation for Every Setup",
+    "sidebarLabel": "Categories"
+  },
+  "catalog": {
+    "products": [
+      {
+        "id": 1,
+        "slug": "trigger-municipal-water-controller",
+        "category": "domestic",
+        "categoryName": "Domestic",
+        "subCategory": "",
+        "title": "Trigger",
+        "subtitle": "Never miss water supply",
+        "description": "Smart controller for motor, directly connected to corporation water supply line",
+        "h1": "Trigger — Smart Automatic Water Level Controller for Municipal Supply",
+        "metaTitle": "Trigger | Smart Municipal Water Level Controller | Aquabrim",
+        "metaDescription": "Trigger by Aquabrim auto-detects municipal water supply and runs your motor to fill tanks automatically. Features dry-run protection, overflow prevention and RF wireless sensors. Trusted by 50,000+ homes.",
+        "images": [
+          "/uploads/product-trigger_2.jpeg",
+          "/uploads/product-trigger_1.jpeg",
+          "/uploads/product-trigger_3.jpeg"
+        ],
+        "howItWorksImg": "/uploads/product-trigger_works.jpeg",
+        "longDescription": [
+          "Trigger is Aquabrim's flagship automatic water level controller designed specifically for Indian homes, apartments, and commercial buildings that depend on municipal corporation water supply. Built after years of dedicated R&D for Indian metropolitan cities, Trigger solves one of the most common household frustrations — missing the water supply and ending up with an empty tank.",
+          "Unlike conventional float switches or manual motor controllers, Trigger uses advanced RF-based wireless sensor technology to detect water availability in your municipal supply line within minutes — even if the water is up to 50 metres away from the motor, or if the motor is installed on the first floor. The moment water is detected, Trigger automatically starts the motor, fills your overhead tank, and shuts the motor down intelligently — preventing overflow, protecting the motor from dry-run damage, and ensuring your tank is always optimally filled without any human intervention.",
+          "Designed with intelligent automation logic, wireless connectivity and multiple safety protections, Trigger is the perfect home automation tool for busy urban households. It requires no wiring between the roof tank and the controller unit — everything communicates wirelessly, making installation clean, simple, and completely maintenance-free."
+        ],
+        "howItWorks": [
+          {
+            "title": "Detects Supply",
+            "desc": "The sensor on your inlet pipe detects municipal water the moment it arrives — within minutes, up to 50m from the motor."
+          },
+          {
+            "title": "Starts the Motor",
+            "desc": "As soon as supply is confirmed, Trigger automatically turns on your motor and begins filling the overhead tank."
+          },
+          {
+            "title": "Monitors the Tank",
+            "desc": "Wireless sensors track tank levels in real time and show live readings on the controller's digital display."
+          },
+          {
+            "title": "Stops Intelligently",
+            "desc": "The motor stops when the tank is full, supply is interrupted, dry run is detected, or voltage becomes unsafe."
+          }
+        ],
+        "features": [
+          "Real-Time Water Detection",
+          "Automatic Motor Control",
+          "RF Wireless Technology",
+          "Dry Run Protection",
+          "Overflow Prevention",
+          "Voltage Protection",
+          "Multi-Tank Support",
+          "LED + Digital Display",
+          "Timer Mode",
+          "Maintenance-Free Sensors"
+        ],
+        "technicalSpecifications": [
+          {
+            "label": "Compatible Supply",
+            "value": "Municipal / Corporation water supply line"
+          },
+          {
+            "label": "Motor Type",
+            "value": "Single / Three Phase motor (direct / MCB / switch)"
+          },
+          {
+            "label": "Wireless Technology",
+            "value": "RF (Radio Frequency) — no tank-to-controller wiring"
+          },
+          {
+            "label": "Detection Range",
+            "value": "Up to 50 metres from motor"
+          },
+          {
+            "label": "Tank Compatibility",
+            "value": "Overhead tank (OH) and Underground tank (UG)"
+          },
+          {
+            "label": "Multi-Tank Support",
+            "value": "Yes — with additional wireless sensors"
+          },
+          {
+            "label": "Display",
+            "value": "4-digit digital display + 5 LED indicators"
+          },
+          {
+            "label": "LED Indicators",
+            "value": "Overflow · Flow On · Motor On · Line Water · Alert"
+          },
+          {
+            "label": "Fuse Protection",
+            "value": "Built-in fuse + 2 spare fuses included"
+          },
+          {
+            "label": "Timer Option",
+            "value": "Yes — multiple timings can be added"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Aquabrim Pvt. Ltd., Ghitorni, New Delhi — 110030"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the Aquabrim Trigger?",
+            "answer": "Trigger is Aquabrim's smart automatic water level controller designed for homes and apartments that receive water from a municipal corporation (city) supply line. It automatically detects when water supply arrives, starts your motor to fill the tank, and stops the motor when the tank is full — all without any manual intervention."
+          },
+          {
+            "question": "How does Trigger detect municipal water supply?",
+            "answer": "Trigger uses a specially designed PRSR transmitter connected to your main water inlet pipe. This sensor continuously monitors the supply line and detects water availability within minutes — even if the supply point is up to 50 metres away from the motor or the motor is installed on an upper floor."
+          },
+          {
+            "question": "Does Trigger require wiring between the tank and the controller?",
+            "answer": "No. Trigger uses RF (Radio Frequency) wireless technology. The tank-level sensors communicate wirelessly with the controller unit — no wiring from the roof or underground tank to the controller is needed. This makes installation much simpler and cleaner."
+          },
+          {
+            "question": "What is dry run protection in Trigger?",
+            "answer": "Dry run protection automatically stops the motor if water supply is interrupted while the motor is running. This prevents the motor from running without water, which can cause overheating, bearing damage, and expensive motor burnout."
+          },
+          {
+            "question": "Can Trigger work if my building receives water at irregular hours?",
+            "answer": "Yes. Trigger monitors the supply line continuously on a real-time basis, so it will detect and respond to supply regardless of what time it arrives. If your supply is at a fixed time, you can also use the built-in timer mode."
+          },
+          {
+            "question": "Can Trigger control multiple tanks?",
+            "answer": "Yes. If your motor fills more than one tank, additional wireless sensors can be installed in each tank. Trigger will display and control the water levels of all connected tanks simultaneously."
+          },
+          {
+            "question": "How do I manually start the motor using Trigger?",
+            "answer": "Press the Trigger button on the controller for 5 seconds until you hear a beep. The motor will start and check for water supply. If no water is detected within 3 minutes, the motor will stop automatically to prevent dry running."
+          },
+          {
+            "question": "What happens if there is a power surge or voltage fluctuation?",
+            "answer": "Trigger includes voltage protection that monitors the power supply and stops the motor if the voltage becomes unsafe. The built-in fuse also protects the internal controller circuit from power spikes and surges."
+          },
+          {
+            "question": "Is the Trigger water level controller easy to install?",
+            "answer": "Yes. The complete kit includes all components needed for a standard installation — transmitters, holders, pipe connectors, mounting screws and the controller unit. Installation involves mounting the controller on a wall, fixing transmitters in the tanks, and connecting the PRSR sensor to the inlet pipe. No special tools are needed beyond a standard masonry drill."
+          },
+          {
+            "question": "Where is Aquabrim Trigger manufactured?",
+            "answer": "Trigger is designed, manufactured and marketed by Aquabrim Pvt. Ltd., based in Ghitorni, New Delhi, India — specifically engineered for Indian metropolitan cities after years of R&D."
+          }
+        ],
+        "cta": {
+          "title": "Ready to automate your water supply?",
+          "subtitle": "Stop managing your motor manually. Let Trigger handle it every day, automatically."
+        }
+      },
+      {
+        "id": 2,
+        "slug": "macro-borewell-water-controller",
+        "category": "domestic",
+        "categoryName": "Domestic",
+        "subCategory": "",
+        "title": "Macro",
+        "subtitle": "Prevents tank overflow",
+        "description": "Controller for borewell/ submersible pumps, motor pumping from Underground tank to Overhead tank",
+        "h1": "Macro — Wireless Automatic Water Level Controller for Borewell & Submersible Pumps",
+        "metaTitle": "Macro | Wireless Automatic Water Level Controller for Borewell & Submersible Pumps | Aquabrim",
+        "metaDescription": "Macro by Aquabrim automates borewell and submersible pump motors, filling overhead tanks from underground sources with dry run protection, overflow prevention and RF wireless sensors.",
+        "images": [
+          "/uploads/product-macro_3.jpeg",
+          "/uploads/product-macro_1.jpeg",
+          "/uploads/product-macro_2.jpeg"
+        ],
+        "howItWorksImg": "/uploads/product-macro_works.jpeg",
+        "longDescription": [
+          "Macro is Aquabrim's wireless automatic water level controller purpose-built for borewell and submersible pump automation. Designed for homes, apartments and commercial buildings that draw water from an underground source, Macro solves the everyday hassle of manually switching motors on and off, and the risk of motor damage from running dry.",
+          "Macro uses RF-based wireless sensor technology to continuously track water levels in the underground tank (or borewell) and the overhead tank, with no wiring required between the tanks and the controller unit. The moment the overhead tank falls below 50%, Macro automatically starts the motor and fills the tank, shutting it down intelligently once full — protecting the motor from dry-run damage and preventing overflow, all without any human intervention.",
+          "Built with intelligent automation logic, wireless connectivity and multiple safety protections, Macro is suitable for the Macro and iBot controller models. It is the reliable automation choice for households and buildings running borewell or submersible pumps, with clean, maintenance-free installation."
+        ],
+        "howItWorks": [
+          {
+            "title": "Monitors Tank Levels",
+            "desc": "Wireless sensors in the underground tank (or borewell) and the overhead tank continuously send real-time level data to the controller."
+          },
+          {
+            "title": "Starts the Motor",
+            "desc": "The moment the overhead tank level falls below 50%, Macro automatically switches on the motor and begins filling."
+          },
+          {
+            "title": "Tracks Real-Time Data",
+            "desc": "Live water level readings for all connected tanks are shown on the 4-digit digital display and LED indicators."
+          },
+          {
+            "title": "Stops Intelligently",
+            "desc": "The motor stops when the tank is full, the underground level drops below 20%, or flow is interrupted for over 2 minutes. It restarts once the underground level reaches 30%."
+          }
+        ],
+        "features": [
+          "Automatic Motor Control",
+          "Underground Tank Protection",
+          "Dry Run Protection",
+          "RF Wireless Technology",
+          "Multi-Tank Support",
+          "LED + Digital Display",
+          "Manual Trigger Button",
+          "Fuse Protection",
+          "Borewell & Submersible Compatible",
+          "Optional Flow Sensor"
+        ],
+        "technicalSpecifications": [
+          {
+            "label": "Compatible Source",
+            "value": "Borewell / submersible pump or underground tank"
+          },
+          {
+            "label": "Motor Type",
+            "value": "Single phase motor (direct / MCB / switch)"
+          },
+          {
+            "label": "Wireless Technology",
+            "value": "RF (Radio Frequency) — no tank-to-controller wiring"
+          },
+          {
+            "label": "Tank Compatibility",
+            "value": "Overhead tank (OH) and underground tank (UG)"
+          },
+          {
+            "label": "Multi-Tank Support",
+            "value": "Yes — with additional wireless sensors"
+          },
+          {
+            "label": "Motor Auto-Start Level",
+            "value": "Overhead tank below 50%"
+          },
+          {
+            "label": "Dry Run Cutoff",
+            "value": "Underground tank below 20%, or flow interrupted over 2 minutes"
+          },
+          {
+            "label": "Motor Restart Level",
+            "value": "Underground tank at 30% or above"
+          },
+          {
+            "label": "Display",
+            "value": "4-digit digital display + 5 LED indicators"
+          },
+          {
+            "label": "LED Indicators",
+            "value": "Overflow · Flow On · Motor On · U.G. Level · Alert E-XX"
+          },
+          {
+            "label": "Fuse Protection",
+            "value": "Built-in fuse + 2 spare fuses included"
+          },
+          {
+            "label": "Manual Trigger",
+            "value": "Yes — press and hold for 5 seconds"
+          },
+          {
+            "label": "Suitable For",
+            "value": "Macro / iBot controller models"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Aquabrim Pvt. Ltd., Ghitorni, New Delhi — 110030"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the Aquabrim Macro?",
+            "answer": "Macro is Aquabrim's smart wireless controller built for borewell and submersible pump automation. It automatically starts your motor to pump water from an underground source into your overhead tank, and stops it once the tank is full — all without manual switching."
+          },
+          {
+            "question": "How does Macro know when to start the motor?",
+            "answer": "Macro continuously monitors the water level in your overhead tank using a wireless level transmitter. The moment the level falls below 50%, it automatically starts the motor to begin refilling."
+          },
+          {
+            "question": "Does Macro require an underground tank, or can it work directly with a borewell?",
+            "answer": "Macro can be used with an underground tank, or connected directly to a borewell or submersible pump. If it is used purely for borewell automation, the underground tank transmitter is not required."
+          },
+          {
+            "question": "What is dry run protection in Macro?",
+            "answer": "Dry run protection stops the motor automatically if the underground tank level drops below 20% while filling, or if water flow into the tank is interrupted for more than 2 minutes. This prevents motor burnout from running without water."
+          },
+          {
+            "question": "When does Macro restart the motor after a dry run stop?",
+            "answer": "Once the underground tank level recovers to at least 30%, Macro automatically restarts the motor to resume filling the overhead tank."
+          },
+          {
+            "question": "Does Macro require wiring between the tank and the controller?",
+            "answer": "No. Macro uses RF (Radio Frequency) wireless technology. The tank sensors send data wirelessly to the controller unit, so no wiring is needed between the tanks and the controller."
+          },
+          {
+            "question": "Can Macro control more than one overhead tank?",
+            "answer": "Yes. If your motor fills more than one tank, additional wireless sensors can be installed in each tank so Macro can display and automatically control the water level of all of them."
+          },
+          {
+            "question": "How do I manually start the motor with Macro?",
+            "answer": "Press and hold the Trigger button for 5 seconds until you hear a beep. The motor starts immediately and fills all connected overhead tanks, then stops automatically once they are full."
+          },
+          {
+            "question": "Is the Macro controller easy to install?",
+            "answer": "Yes. The kit includes the controller unit, UG and OH tank level transmitters, transmitter holders, mounting hardware and an optional flow sensor. Installation involves fixing the transmitters in the tanks, connecting the controller to the motor circuit, and mounting the controller on a wall using a standard masonry drill."
+          },
+          {
+            "question": "Where is the Aquabrim Macro manufactured?",
+            "answer": "Macro is designed, manufactured and marketed by Aquabrim Pvt. Ltd., based in Ghitorni, New Delhi, India, and is suitable for the Macro and iBot controller models."
+          }
+        ],
+        "cta": {
+          "title": "Ready to automate your borewell or submersible pump?",
+          "subtitle": "Stop switching your motor manually. Let Macro handle underground-to-overhead tank filling automatically, every day.",
+          "contact": "call"
+        }
+      },
+      {
+        "id": 4,
+        "slug": "matrix-multi-tank-controller",
+        "category": "industrial",
+        "categoryName": "Industrial",
+        "subCategory": "",
+        "title": "MATRIX",
+        "subtitle": "",
+        "description": "Multi-Tank Water Level Controller",
+        "h1": "Matrix — Wireless Motor Controller & Water Level Indicator for Large Buildings",
+        "metaTitle": "Matrix | Wireless Water Level Controller for Multi-Tank & BMS Automation | Aquabrim",
+        "metaDescription": "Matrix by Aquabrim is a wireless water level controller for large buildings, automating up to 13 overhead tanks and 2 motors with MODBUS based BMS integration.",
+        "images": [
+          "/uploads/product-matix_1.webp",
+          "/uploads/product-matrix_2.webp",
+          "/uploads/product-matrix_3.webp"
+        ],
+        "howItWorksImg": "/uploads/product-matrix_how_to_work.jpeg",
+        "longDescription": [
+          "Matrix is Aquabrim's most versatile wireless water level controller, engineered for large residential complexes, commercial buildings and institutional sites that need centralized control over their water supply. Unlike compact single-tank controllers, Matrix is built to scale — automating water levels for up to 13 overhead tanks and 1 underground tank from a single unit.",
+          "Every sensor communicates wirelessly with the controller in the 433 to 434 MHz RF band, removing the need for wiring between tanks and the control room. Matrix runs 2 motors in flexible combinations decided at the time of installation, and can also display the open or close status of motorized valves installed near tanks, giving facility teams full visibility over the water system.",
+          "Matrix is fully configurable on site, with adjustable overflow, full and low level thresholds, up to 10 programmable timers and MODBUS connectivity that lets its data feed directly into a Building Management System (BMS) for remote monitoring and control. It is manufactured and supported by Aquabrim, built for demanding, always-on water automation."
+        ],
+        "howItWorks": [
+          {
+            "title": "Connects Wirelessly",
+            "desc": "RF sensors in each tank transmit water level data wirelessly, in the 433 to 434 MHz band, to the Matrix controller."
+          },
+          {
+            "title": "Monitors All Tanks",
+            "desc": "Matrix tracks levels across up to 13 overhead tanks and 1 underground tank in real time, showing live readings on the digital display."
+          },
+          {
+            "title": "Controls the Motors",
+            "desc": "Based on configured settings, Matrix automatically starts or stops up to 2 motors, in combination, to keep every tank filled."
+          },
+          {
+            "title": "Syncs with BMS",
+            "desc": "All data is shared over the MODBUS protocol, so a Building Management System can remotely monitor and control the entire setup."
+          }
+        ],
+        "features": [
+          "Wireless RF Technology",
+          "BMS Integration via MODBUS",
+          "Multi-Tank Automation (13 OH + 1 UG)",
+          "Dual Motor Control",
+          "Site-Configurable Settings",
+          "Motorized Valve Status Display",
+          "Digital Level Display",
+          "Overflow & Alert Indicators",
+          "10 Programmable Timers",
+          "High Current Motor Protection"
+        ],
+        "technicalSpecifications": [
+          {
+            "label": "Frequency Range",
+            "value": "433 to 434 MHz"
+          },
+          {
+            "label": "Current Consumption",
+            "value": "0.01 to 0.05 Amp at 220V AC"
+          },
+          {
+            "label": "RF Sensitivity",
+            "value": "-105 to -116 dBm"
+          },
+          {
+            "label": "Level Display Range",
+            "value": "0 to 199%"
+          },
+          {
+            "label": "Overhead Tanks Controlled",
+            "value": "Up to 13"
+          },
+          {
+            "label": "Underground Tanks Controlled",
+            "value": "1"
+          },
+          {
+            "label": "Motors Controlled",
+            "value": "Up to 2, in combination"
+          },
+          {
+            "label": "Number of Timers",
+            "value": "10"
+          },
+          {
+            "label": "Indirect Flow Rate",
+            "value": "5 to 199% per hour"
+          },
+          {
+            "label": "Overflow Level Setting",
+            "value": "101 to 199%"
+          },
+          {
+            "label": "Full Level Setting",
+            "value": "81 to 180%"
+          },
+          {
+            "label": "Low Level Setting",
+            "value": "10 to 80%"
+          },
+          {
+            "label": "Max Current",
+            "value": "10 Amp"
+          },
+          {
+            "label": "Antenna",
+            "value": "Quarter wave whip antenna"
+          },
+          {
+            "label": "Enclosure",
+            "value": "MS sheet body with acrylic front panel, IP-51"
+          },
+          {
+            "label": "Dimensions",
+            "value": "426(H) x 225(W) x 95(D) mm"
+          },
+          {
+            "label": "Supply Voltage",
+            "value": "180 to 260V"
+          },
+          {
+            "label": "Installation",
+            "value": "Indoor"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "-10°C to 55°C"
+          },
+          {
+            "label": "Humidity",
+            "value": "Up to 90%"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Aquabrim Home Appliance Pvt. Ltd., Ghitorni, New Delhi — 110030"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the Aquabrim Matrix?",
+            "answer": "Matrix is Aquabrim's advanced wireless water level controller designed for large buildings and commercial sites. It automates water levels across multiple overhead tanks and an underground tank, controlling up to 2 motors from a single controller unit."
+          },
+          {
+            "question": "How many tanks can Matrix control?",
+            "answer": "Matrix can control water levels in up to 13 overhead tanks and 1 underground tank simultaneously, making it suitable for large residential complexes, commercial buildings and institutional sites."
+          },
+          {
+            "question": "Does Matrix require wiring between the tanks and the controller?",
+            "answer": "No. Matrix receives sensor data wirelessly in the 433 to 434 MHz RF band, so no wiring is needed between tanks and the control unit. This greatly simplifies installation and maintenance."
+          },
+          {
+            "question": "Can Matrix connect to a Building Management System (BMS)?",
+            "answer": "Yes. Matrix communicates over the MODBUS protocol, allowing its water level and system data to be uploaded to a BMS for remote monitoring and control."
+          },
+          {
+            "question": "How many motors can Matrix control?",
+            "answer": "Matrix can control 2 motors, in various combinations, configured on site to match the specific pumping requirements of the building."
+          },
+          {
+            "question": "Can Matrix show the status of motorized valves?",
+            "answer": "Yes. If a motorized valve is installed near a tank, Matrix displays its open or close status on the controller, so facility teams always know the state of the system."
+          },
+          {
+            "question": "Is Matrix configurable after installation?",
+            "answer": "Yes. Matrix is highly configurable on site. Overflow, full and low level percentages, indirect flow rate and up to 10 timers can all be adjusted by users to suit site conditions."
+          },
+          {
+            "question": "What are the overflow, full and low level settings on Matrix?",
+            "answer": "Overflow can be set between 101 and 199%, full level between 81 and 180%, and low level between 10 and 80%, giving installers flexibility to match each site's tank configuration."
+          },
+          {
+            "question": "What are the electrical and environmental specifications of Matrix?",
+            "answer": "Matrix operates on a supply voltage of 180 to 260V, draws a maximum of 10 Amp, and is rated for indoor installation at operating temperatures from -10°C to 55°C, with humidity up to 90%."
+          },
+          {
+            "question": "Where is the Aquabrim Matrix manufactured?",
+            "answer": "Matrix is manufactured by Aquabrim Home Appliance Pvt. Ltd., based in Ghitorni, New Delhi, India."
+          }
+        ],
+        "cta": {
+          "title": "Ready to automate water supply across your entire building?",
+          "subtitle": "Give your facility team centralized, wireless control over every tank, motor and valve, with Matrix.",
+          "contact": "email"
+        }
+      },
+      {
+        "id": 5,
+        "slug": "flexibell-water-level-alarm",
+        "category": "industrial",
+        "categoryName": "Industrial",
+        "subCategory": "",
+        "title": "FLEXIBELL",
+        "subtitle": "",
+        "description": "Wireless Water Level Alarm",
+        "h1": "Flexibell — Wireless Water Level Indicator & Alarm System",
+        "metaTitle": "Flexibell | Wireless Water Level Indicator & Alarm System | Aquabrim",
+        "metaDescription": "Flexibell by Aquabrim is a wireless water level indicator and alarm system for up to 6 tanks, with customized low, full and overflow alerts and optional SMS notifications.",
+        "images": [
+          "/uploads/product-flexibell_1.webp",
+          "/uploads/product-flexibell_2.webp",
+          "/uploads/product-flexibeell_3.webp"
+        ],
+        "howItWorksImg": "",
+        "longDescription": [
+          "Flexibell is Aquabrim's versatile wireless water level indicator and alarm system, built for homes, commercial buildings and institutional sites that want clear visibility into multiple tanks without automating the motor. It receives level data wirelessly from sensors installed in each tank and triggers an alarm the moment a tank runs low, becomes full or overflows.",
+          "Each connected tank sends its data wirelessly to Flexibell in the 433 to 434 MHz RF band, removing the need for wiring between tanks and the control unit. Flexibell can display levels for up to 6 water storage tanks, with low, full and overflow alarm thresholds set individually for each tank, and can also show the open or close status of a motorized valve installed near a tank.",
+          "Flexibell is highly configurable on site, and can optionally connect to a Building Management System over MODBUS or to Aquabrim's web based monitoring service, which enables SMS alerts to multiple numbers. Level sensors, signal repeaters and the web based monitoring service are sold separately and are not included with the controller unit."
+        ],
+        "howItWorks": [
+          {
+            "title": "Connects Wirelessly",
+            "desc": "Level sensors installed in each tank transmit water level data wirelessly, in the 433 to 434 MHz band, to Flexibell."
+          },
+          {
+            "title": "Tracks Every Tank",
+            "desc": "Flexibell displays real-time level readings for up to 6 water storage tanks on its digital display."
+          },
+          {
+            "title": "Triggers the Alarm",
+            "desc": "When a tank crosses its configured low, full or overflow threshold, Flexibell sounds the buzzer and lights the matching LED indicator."
+          },
+          {
+            "title": "Sends Remote Alerts",
+            "desc": "With the optional web based monitoring service, Flexibell can send SMS alerts to multiple numbers and share data with a BMS over MODBUS."
+          }
+        ],
+        "features": [
+          "Wireless RF Technology",
+          "Multi-Tank Alarm System",
+          "Level Display for up to 6 Tanks",
+          "Customized Alarm Levels",
+          "Motorized Valve Status Display",
+          "SMS Alerts (Optional)",
+          "BMS / MODBUS Integration (Optional)",
+          "Web-Based Monitoring (Optional)",
+          "Digital Level Display",
+          "High-Output Buzzer"
+        ],
+        "technicalSpecifications": [
+          {
+            "label": "Frequency Range",
+            "value": "433 to 434 MHz"
+          },
+          {
+            "label": "Current Consumption",
+            "value": "0.01 to 0.05 Amp at 220V AC"
+          },
+          {
+            "label": "RF Sensitivity",
+            "value": "-105 to -116 dBm"
+          },
+          {
+            "label": "Level Display Range",
+            "value": "0 to 199%"
+          },
+          {
+            "label": "Level Display Resolution",
+            "value": "1%"
+          },
+          {
+            "label": "Overhead Tanks for Level Indication",
+            "value": "Up to 6 (site configuration dependent)"
+          },
+          {
+            "label": "Overflow Level Setting",
+            "value": "101 to 199%"
+          },
+          {
+            "label": "Full Level Setting",
+            "value": "81 to 180%"
+          },
+          {
+            "label": "Low Level Setting",
+            "value": "10 to 80%"
+          },
+          {
+            "label": "Max Buzzer Output Current",
+            "value": "10 Amp"
+          },
+          {
+            "label": "Antenna",
+            "value": "Quarter wave whip antenna"
+          },
+          {
+            "label": "Enclosure",
+            "value": "MS sheet body with acrylic front panel, IP-51"
+          },
+          {
+            "label": "Dimensions",
+            "value": "426(H) x 225(W) x 95(D) mm (antenna length extra)"
+          },
+          {
+            "label": "Supply Voltage",
+            "value": "180 to 260V"
+          },
+          {
+            "label": "Installation",
+            "value": "Indoor"
+          },
+          {
+            "label": "Operating Temperature",
+            "value": "10°C to 55°C"
+          },
+          {
+            "label": "Humidity",
+            "value": "Up to 90%"
+          },
+          {
+            "label": "Included in Box",
+            "value": "Controller unit, buzzer, digital display"
+          },
+          {
+            "label": "Not Included",
+            "value": "Level sensors, repeaters, web based monitoring service"
+          },
+          {
+            "label": "Manufacturer",
+            "value": "Aquabrim Home Appliance Pvt. Ltd., Ghitorni, New Delhi — 110030"
+          }
+        ],
+        "faqs": [
+          {
+            "question": "What is the Aquabrim Flexibell?",
+            "answer": "Flexibell is a wireless water level indicator and alarm system that monitors multiple water storage tanks and alerts you the moment a tank runs low, becomes full or overflows. Unlike a motor controller, Flexibell does not operate pumps — it purely monitors and alarms."
+          },
+          {
+            "question": "How many tanks can Flexibell monitor?",
+            "answer": "Flexibell can display and monitor water levels for up to 6 water storage tanks from a single unit, with each tank configured individually."
+          },
+          {
+            "question": "Does Flexibell control the motor automatically?",
+            "answer": "No. Flexibell is a monitoring and alarm system only — it does not start or stop motors. It is designed for households and buildings that want water level visibility and alerts without automating the pump itself."
+          },
+          {
+            "question": "Does Flexibell require wiring between the tanks and the unit?",
+            "answer": "No. Flexibell receives sensor data wirelessly in the 433 to 434 MHz RF band, so no wiring is needed between the tanks and the controller unit."
+          },
+          {
+            "question": "Can Flexibell send SMS alerts?",
+            "answer": "Yes, as an optional feature. When connected through Aquabrim's web based monitoring service, Flexibell can send SMS alerts for low, full and overflow events to multiple mobile numbers."
+          },
+          {
+            "question": "Can Flexibell connect to a Building Management System (BMS)?",
+            "answer": "Yes, optionally. Flexibell's data can be uploaded to a BMS over the MODBUS protocol, or shared through the optional web based monitoring system, for remote monitoring."
+          },
+          {
+            "question": "Can Flexibell show the status of motorized valves?",
+            "answer": "Yes. If a motorized valve is installed near a tank, Flexibell displays its open or close status on the unit."
+          },
+          {
+            "question": "Are the level sensors and web monitoring service included with Flexibell?",
+            "answer": "The Flexibell unit includes the buzzer, display and alarm system. Level sensors, signal repeaters and the web based monitoring service are not included and should be ordered separately based on site requirements."
+          },
+          {
+            "question": "Can alarm levels be customized for each tank?",
+            "answer": "Yes. Low, full and overflow alarm levels can be set individually for each connected tank, so Flexibell can be configured to match the specific needs of every tank on site."
+          },
+          {
+            "question": "Where is the Aquabrim Flexibell manufactured?",
+            "answer": "Flexibell is manufactured by Aquabrim Home Appliance Pvt. Ltd., based in Ghitorni, New Delhi, India."
+          }
+        ],
+        "cta": {
+          "title": "Ready to stop guessing your tank levels?",
+          "subtitle": "Get instant alerts the moment any tank runs low, fills up or overflows, with Flexibell.",
+          "contact": "email"
+        }
+      },
+      {
+        "id": 6,
+        "slug": "wireless-water-level-transmitter-capacitive",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "wireless_capacitive",
+        "title": "Wireless water level transmitter ( Capacitive)",
+        "subtitle": "",
+        "description": "Continuous capacitive level sensing for deep tanks and borewells.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-wireless-water-level-transmitter-capacitive.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Capacitive Wireless Water Level Transmitter is an advanced solution for high-accuracy, continuous liquid level measurement. Built around a robust capacitive rod probe, the transmitter measures the change in electrical capacitance as liquid rises or falls along its length. Unlike mechanical float switches, it has no moving parts to clog or jam, making it exceptionally reliable in varying liquid types, deep tanks, and challenging environments. A built-in wireless transmitter sends absolute level data in real-time to the main Aquabrim controller.",
+        "howItWorks": [
+          {
+            "title": "Capacitive Field Analysis",
+            "desc": "Measures changing dielectric capacitance along the probe rod as water levels change."
+          },
+          {
+            "title": "Real-Time Level Digitization",
+            "desc": "Converts capacitance values into a precise level percentage or height measurement."
+          },
+          {
+            "title": "Wireless Broadcast",
+            "desc": "Periodically sends data packets to the primary receiver without complex wiring."
+          }
+        ],
+        "features": [
+          "Rod Probe Continuous Tracking",
+          "No Mechanical Moving Parts",
+          "Ultra-Long Lifespan Design",
+          "Battery-Powered Transmitter",
+          "High Resolution Output",
+          "Chemical Resistant Materials"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 7,
+        "slug": "current-voltage-monitoring-system",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "current_voltage",
+        "title": "Current & Voltage monitoring system",
+        "subtitle": "",
+        "description": "Advanced electrical health monitoring and pump safety system.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-current-voltage-monitoring-system.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Smart Phase & Current Monitor is a robust electrical protection and diagnostic module designed to protect heavy-duty industrial pump starters and motors. It continuously monitors incoming voltage levels, phase synchronization, load current, and power factor in real-time. Upon detecting electrical faults such as single-phasing, phase reversal, overvoltage, undervoltage, or overload current, it triggers an instant safe-shutdown command to save expensive motors from winding burnouts. Featuring integrated wireless communication, the electrical telemetry is fed directly into building SCADA and command dashboards.",
+        "howItWorks": [
+          {
+            "title": "Real-Time Electrical Sensing",
+            "desc": "Measures voltage and current across all phases continuously."
+          },
+          {
+            "title": "Immediate Fault Detection",
+            "desc": "Identifies phase imbalances, single-phasing, or overload spikes."
+          },
+          {
+            "title": "Instant Pump Protection",
+            "desc": "Trips the starter immediately to prevent motor burnout, logging the fault details."
+          }
+        ],
+        "features": [
+          "Over/Under Voltage Protection",
+          "Overload & Dry Run Current Trips",
+          "Phase Reversal Detection",
+          "Wireless Status Telemetry",
+          "DIN-Rail Compatible Layout",
+          "LCD Parameter Display"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 8,
+        "slug": "flow-meter",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "flowmeter",
+        "title": "Flow Meter",
+        "subtitle": "",
+        "description": "High-precision wireless electromagnetic flow monitoring system.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-electromagnetic-flow-meter.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "Aquabrim's Wireless Electromagnetic Flow Meter is a next-generation solution for high-accuracy liquid flow measurement in commercial, industrial, and municipal supply pipelines. Employing state-of-the-art electromagnetic principles, the system accurately detects flow velocity and volume without any moving parts, minimizing pressure drops and eliminating wear and tear. Equipped with advanced wireless telemetry, the flow meter transmits real-time flow rate data and totalized volume directly to Aquabrim's central controllers or cloud command platform, enabling seamless automated leakage detection and consumption analysis.",
+        "howItWorks": [
+          {
+            "title": "Detects Flow Rate and Volume",
+            "desc": "Uses electromagnetic induction to calculate flow volume accurately in real-time."
+          },
+          {
+            "title": "Wireless Telemetry",
+            "desc": "Transmits real-time flow data wirelessly to control hubs or Building Management Systems (BMS)."
+          },
+          {
+            "title": "Detects Leakages & Anomalies",
+            "desc": "Highlights unusual flow patterns to prevent resource wastage and enable water audits."
+          }
+        ],
+        "features": [
+          "High-Accuracy Measurement",
+          "No Moving Parts",
+          "Wireless Data Transmission",
+          "Leakage Detection Support",
+          "IP68 Waterproof Housing",
+          "Low Pressure Drop"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 9,
+        "slug": "temperature-humidity-monitoring-system",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "temp_humidity",
+        "title": "Temperature and humidity Monitoring system",
+        "subtitle": "",
+        "description": "Remote environmental condition monitoring for panels and server rooms.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-temperature-humidity-monitoring-system.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Wireless Temperature & Humidity Sensor provides real-time, high-precision climate tracking inside critical control panels, motor starter rooms, and server infrastructure. Continuous exposure to high humidity or excessive temperatures can lead to early component failures and motor insulation breakdowns. This sensor transmits ambient atmospheric data continuously to the central command centre, triggering automated ventilation control or safety alarms when preset thresholds are breached, ensuring complete operational health.",
+        "howItWorks": [
+          {
+            "title": "Atmospheric Condition Measurement",
+            "desc": "High sensitivity sensor elements measure temperature and relative humidity continuously."
+          },
+          {
+            "title": "Wireless Telemetry",
+            "desc": "Transmits temperature and humidity data periodically to the gateway."
+          },
+          {
+            "title": "Proactive Alarming",
+            "desc": "Integrates with ventilation control and sounds alarms if safety thresholds are crossed."
+          }
+        ],
+        "features": [
+          "High-Precision Thermal Sensor",
+          "Relative Humidity Tracking",
+          "Ultra-Low Power / Battery Powered",
+          "Compact Adhesive/Magnetic Mount",
+          "Instant Alert Triggering",
+          "Wide Temperature Range"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 10,
+        "slug": "wireless-water-level-transmitter-non-contact",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "wireless_non_contact",
+        "title": "Wireless water level transmitter ( Non Contact)",
+        "subtitle": "",
+        "description": "Radar and ultrasonic non-contact level transmitter for open sumps.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-non-contact-transmitter-1.jpg",
+          "/uploads/accessories-non-contact-transmitter-2.jpg",
+          "/uploads/accessories-non-contact-transmitter-3.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Non-Contact Ultrasonic Level Transmitter utilizes advanced acoustic ranging to measure liquid levels without touching the medium. Positioned at the top of a tank or open sump, the sensor emits high-frequency sound pulses and measures the time-of-flight of the echo. This non-contact approach is ideal for sewage, acidic, or turbulent environments where physical contact would lead to probe degradation or scale build-up. The integrated wireless transmitter eliminates the need for expensive structural cabling, sending raw level information straight to the command gateway.",
+        "howItWorks": [
+          {
+            "title": "Ultrasonic Acoustic Ranging",
+            "desc": "Emits high-frequency sound waves downward and listens for reflections."
+          },
+          {
+            "title": "Time-of-Flight Computation",
+            "desc": "Calculates liquid depth based on reflection travel times."
+          },
+          {
+            "title": "Wireless Telemetry",
+            "desc": "Reports exact height measurements directly to level controllers or smart displays."
+          }
+        ],
+        "features": [
+          "Non-Contact Measurement Path",
+          "Perfect for Sewage & Acids",
+          "Integrated Temp Compensation",
+          "Battery Powered Wireless Operation",
+          "Narrow Beam Angle Focus",
+          "Simple Overhead Mounting"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 12,
+        "slug": "integrated-control-command-centre",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "integrated_control",
+        "title": "Integrated Control & Command centre",
+        "subtitle": "",
+        "description": "Unified dashboard and command hub for site-wide water systems.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-integrated-control-command-centre.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Integrated Control & Command Centre (ICCC) is a centralized, high-performance console that aggregates telemetry from all controllers, transmitters, flow meters, and current monitors across a commercial campus, residential complex, or manufacturing site. It provides facilities managers with a comprehensive, single-screen dashboard illustrating total water storage, real-time consumption rates, electrical motor health, and alarm statuses. With cloud compatibility, operators can monitor system health, override valve controls, and analyze consumption trends from anywhere.",
+        "howItWorks": [
+          {
+            "title": "Distributed Telemetry Aggregation",
+            "desc": "Receives and consolidates wireless data from all localized controllers and sensors."
+          },
+          {
+            "title": "Visual Dashboard Rendering",
+            "desc": "Renders complex telemetry into clear, interactive maps and tank visualizers."
+          },
+          {
+            "title": "Actionable Logic & Control",
+            "desc": "Provides real-time alert logs and manual override commands for pumps and valves."
+          }
+        ],
+        "features": [
+          "Multi-Device Aggregation",
+          "Interactive Map GUI",
+          "Real-Time Email & SMS Alerts",
+          "Cloud-Synced Data Logs",
+          "Pump Efficiency Calculations",
+          "Multi-User Role Management"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 14,
+        "slug": "motorized-valve",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "motorized_valve",
+        "title": "Motorized Valve",
+        "subtitle": "",
+        "description": "Heavy-duty automated control valves with wireless triggering.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-motorized-valve.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Aquabrim Wireless Motorised Valve System is designed for robust and automated routing of water across large-scale commercial and industrial tank networks. Fully integrated with our level controllers, this system eliminates manual valve operation entirely. The valve utilizes an electric actuator linked to a high-torque gearbox, ensuring reliable open and close operations even under high line pressure. Real-time status updates are sent wirelessly to the controller, allowing for multi-tank filling coordination, dynamic flow diverting, and automatic overflow prevention.",
+        "howItWorks": [
+          {
+            "title": "Automatic Valve Triggering",
+            "desc": "Receives wireless open/close commands from the central level controller."
+          },
+          {
+            "title": "Dynamic Flow Diversion",
+            "desc": "Automatically directs water to specific tanks based on level priorities."
+          },
+          {
+            "title": "Feedback Status",
+            "desc": "Reports exact open/closed status wirelessly to ensure system safety and prevent line pressure buildup."
+          }
+        ],
+        "features": [
+          "High Torque Actuator",
+          "Wireless Operation Feedback",
+          "Multi-Tank Routing Support",
+          "Manual Override Option",
+          "Corrosion Resistant Build",
+          "Low Power Consumption"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 15,
+        "slug": "iot-gateway",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "iot_gateway",
+        "title": "IoT Gateway",
+        "subtitle": "",
+        "description": "Cloud communication hub linking Aquabrim devices over GPRS, WiFi & RS485.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-iot-gateway.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Aquabrim IoT Gateway (Fusion Communication Hub) is the central bridge between on-site water automation devices and the cloud. Supporting GPRS, WiFi, and RS485/Modbus connectivity, it securely collects real-time data from controllers, transmitters, flow meters, and sensors and relays it to the Aquabrim cloud dashboard and mobile app. With its rugged enclosure, external antenna, and reliable power supply, the gateway enables remote monitoring, instant alerts, and centralized control across single or multiple sites.",
+        "howItWorks": [
+          {
+            "title": "Collects Field Data",
+            "desc": "Gathers readings from connected controllers and sensors over RS485/Modbus and wireless links."
+          },
+          {
+            "title": "Connects to the Cloud",
+            "desc": "Transmits data securely to the Aquabrim cloud platform via GPRS or WiFi."
+          },
+          {
+            "title": "Enables Remote Access",
+            "desc": "Lets users monitor levels, receive alerts, and control devices from the web and mobile app."
+          }
+        ],
+        "features": [
+          "GPRS / WiFi / RS485 Connectivity",
+          "Modbus Integration",
+          "Real-Time Cloud Sync",
+          "Remote Monitoring & Alerts",
+          "External Antenna for Range",
+          "Rugged Weatherproof Enclosure"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 16,
+        "slug": "wireless-signal-booster",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "signal_booster",
+        "title": "Wireless Signal Booster",
+        "subtitle": "",
+        "description": "Extends wireless range between transmitters and the main controller.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-wireless-signal-booster.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Aquabrim Wireless Signal Booster (Repeater) extends the wireless communication range between water level transmitters, sensors, and the main controller. In large buildings, basements, or sites with thick walls and long distances, radio signals can weaken before reaching the receiver. The booster captures these signals and re-transmits them at full strength, ensuring reliable, uninterrupted data flow across the entire installation without additional wiring.",
+        "howItWorks": [
+          {
+            "title": "Receives Weak Signals",
+            "desc": "Picks up wireless data packets from distant transmitters and sensors."
+          },
+          {
+            "title": "Amplifies & Re-transmits",
+            "desc": "Boosts the signal and forwards it to the controller at full strength."
+          },
+          {
+            "title": "Extends Coverage",
+            "desc": "Bridges dead zones across large or multi-floor sites without extra cabling."
+          }
+        ],
+        "features": [
+          "Extends Wireless Range",
+          "Plug-and-Play Setup",
+          "Eliminates Signal Dead Zones",
+          "No Additional Wiring",
+          "Compact Wall-Mount Design",
+          "Reliable Multi-Floor Coverage"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      },
+      {
+        "id": 17,
+        "slug": "lidar-based-level-sensor",
+        "category": "more_categories",
+        "categoryName": "More Category",
+        "subCategory": "lidar_sensor",
+        "title": "Lidar based level sensor",
+        "subtitle": "",
+        "description": "Non-contact LiDAR level sensing for precise, maintenance-free measurement.",
+        "h1": "",
+        "metaTitle": "",
+        "metaDescription": "",
+        "images": [
+          "/uploads/accessories-lidar-level-sensor.jpg"
+        ],
+        "howItWorksImg": "",
+        "longDescription": "The Aquabrim LiDAR Based Level Sensor uses laser time-of-flight technology to measure water level without ever touching the liquid. Mounted above the tank or sump, it emits a focused laser pulse and calculates the exact distance to the water surface from the reflected light. Because there is no physical contact, it is unaffected by scale, foam, or chemicals, making it ideal for sewage, corrosive, and high-accuracy applications. Level data is transmitted wirelessly to the Aquabrim controller in real time.",
+        "howItWorks": [
+          {
+            "title": "Laser Time-of-Flight",
+            "desc": "Emits a laser pulse and measures how long the reflection takes to return."
+          },
+          {
+            "title": "Precise Distance Calculation",
+            "desc": "Converts the travel time into an exact water-level reading."
+          },
+          {
+            "title": "Wireless Reporting",
+            "desc": "Sends real-time level data to the controller without contact or wiring in the tank."
+          }
+        ],
+        "features": [
+          "Non-Contact Laser Measurement",
+          "High Accuracy & Resolution",
+          "Unaffected by Foam or Scale",
+          "Ideal for Sewage & Corrosive Liquids",
+          "Maintenance-Free Operation",
+          "Wireless Real-Time Data"
+        ],
+        "technicalSpecifications": [],
+        "faqs": [],
+        "cta": {
+          "title": "",
+          "subtitle": "",
+          "contact": ""
+        }
+      }
+    ]
+  },
+  "cta": {
+    "title": "Need Help Choosing the Right System?",
+    "subtitle": "Our experts can help you find the best solution for your setup.",
+    "btnText": "Talk to Expert",
+    "btnLink": "/contact-us",
+    "icon": "bi-person-workspace",
+    "btnIcon": "bi-chat-dots-fill"
+  }
+}

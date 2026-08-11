@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
 import api from '../../lib/api';
+import { mediaUrl } from '../../lib/media';
 
 // Image field: shows a preview, uploads the picked file to /admin/upload,
 // and stores the returned URL as the field value.
@@ -25,7 +26,9 @@ export default function ImageField({ value, onChange }) {
   return (
     <div className="image-field">
       {value ? (
-        <img src={value} alt="" className="image-preview" />
+        // Preview resolves the stored path against THIS environment's API, so a
+        // "/uploads/..." path shows the local file when working on localhost.
+        <img src={mediaUrl(value)} alt="" className="image-preview" />
       ) : (
         <div className="image-placeholder">No image</div>
       )}
@@ -34,7 +37,7 @@ export default function ImageField({ value, onChange }) {
           type="text"
           value={value || ''}
           onChange={(e) => onChange(e.target.value)}
-          placeholder="/assets/... or paste a URL"
+          placeholder="/uploads/... or paste a URL"
         />
         <div className="image-field-actions">
           <button type="button" className="btn btn-ghost" onClick={() => inputRef.current?.click()} disabled={busy}>
