@@ -16,6 +16,29 @@ import pool from '../config/db.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const SEED_DIR = path.join(__dirname, 'seed-data');
+// Images ship inside seed-data (git-tracked) and are installed into uploads/
+// here. uploads/ itself is gitignored because it holds runtime uploads, so seed
+// images copied straight there would never reach the server.
+const SEED_IMAGES_DIR = path.join(SEED_DIR, 'images');
+const UPLOADS_DIR = path.join(__dirname, '..', '..', 'uploads');
+
+// Copy the seed images into the folder the API serves at /uploads.
+// Existing files are overwritten so a re-seed always matches the content.
+const installImages = () => {
+  if (!fs.existsSync(SEED_IMAGES_DIR)) {
+    console.warn(`• no seed images at ${SEED_IMAGES_DIR} — skipping image install`);
+    return 0;
+  }
+  fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+  let n = 0;
+  for (const name of fs.readdirSync(SEED_IMAGES_DIR)) {
+    const from = path.join(SEED_IMAGES_DIR, name);
+    if (!fs.statSync(from).isFile()) continue;
+    fs.copyFileSync(from, path.join(UPLOADS_DIR, name));
+    n += 1;
+  }
+  return n;
+};
 
 // slug -> the file holding that page's content.
 const SEEDS = [
@@ -45,6 +68,11 @@ const summarise = (slug, content) => {
 const run = async () => {
   const client = await pool.connect();
   try {
+    // Images first: content rows reference /uploads/<name>, so the files must be
+    // in place before those references go live.
+    const images = installImages();
+    console.log(`✓ images: installed ${images} file(s) into ${UPLOADS_DIR}`);
+
     for (const seed of SEEDS) {
       const file = path.join(SEED_DIR, seed.file);
       if (!fs.existsSync(file)) {
