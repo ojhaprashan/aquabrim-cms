@@ -1,4 +1,119 @@
-// BLOG page template — mirrors BlogScreen.tsx (the live /blogs page).
+// BLOG template.
+//
+// ONE "Post" = ONE complete article. The fields below are laid out in the exact
+// order of the SEO team's Word doc, so writing a post is a straight top-to-bottom
+// copy job:
+//
+//   1. Publishing    <- the "URL SLUG / H1 / AUTHOR / DATE" block of the doc
+//   2. SEO           <- the "META TITLE / META DESC" block
+//   3. Card & Image  <- the listing card + the big image on the article page
+//   4. Article       <- "LIVE BLOG CONTENT": quick answer, intro, then one
+//                       Section per H2 heading
+//   5. FAQs          <- the "FAQs" block (also becomes FAQPage schema)
+//
+// Nothing is a "block type" and there is no HTML to write. Every field is plain
+// text, and everything except the heading inside a Section is optional — fill in
+// only the parts your doc actually has.
+//
+// Categories and their counts are NOT edited here: the site derives the category
+// list and the post count per category from the posts below, automatically.
+//
+// Leaving a field blank keeps whatever the site already ships for that slug
+// (src/data/blogs.ts). Typing in a field overrides it.
+
+// A single H3 sub-section inside a Section. Used when the doc has a smaller
+// heading part-way through a section (e.g. "How It Works").
+const subsectionFields = [
+  { key: 'heading', label: 'Sub-heading (H3)', type: 'text', maxLength: 120 },
+  { key: 'paragraphs', label: 'Paragraphs', type: 'list', itemLabel: 'Paragraph', maxItems: 8,
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+  { key: 'bullets', label: 'Bullet points', type: 'list', itemLabel: 'Bullet', maxItems: 12,
+    itemField: { key: 'text', label: 'Bullet', type: 'textarea', maxLength: 300 } },
+  { key: 'paragraphsAfter', label: 'Paragraphs after the bullets', type: 'list', itemLabel: 'Paragraph', maxItems: 5,
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+];
+
+// One H2 section of the article. Renders strictly in this order:
+// heading -> paragraphs -> bullets -> paragraphsAfter -> highlight -> table -> sub-sections.
+const sectionFields = [
+  { key: 'heading', label: 'Section heading (H2)', type: 'text', maxLength: 120,
+    help: 'Also becomes an entry in the sticky table of contents on the left of the article' },
+  { key: 'paragraphs', label: 'Paragraphs', type: 'list', itemLabel: 'Paragraph', maxItems: 10,
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+  { key: 'bullets', label: 'Bullet points', type: 'list', itemLabel: 'Bullet', maxItems: 12,
+    help: 'Each one shows with a blue tick. Leave empty if this section has no bullets',
+    itemField: { key: 'text', label: 'Bullet', type: 'textarea', maxLength: 300 } },
+  { key: 'paragraphsAfter', label: 'Paragraphs after the bullets', type: 'list', itemLabel: 'Paragraph', maxItems: 5,
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+  { key: 'highlight', label: 'Highlight box (optional)', type: 'group',
+    help: 'Blue tinted box — use for a "Quick fact" or a key takeaway. Leave both blank to hide it',
+    fields: [
+      { key: 'title', label: 'Box label', type: 'text', maxLength: 40, placeholder: 'Quick fact' },
+      { key: 'text', label: 'Box text', type: 'textarea', maxLength: 500 },
+    ] },
+  { key: 'table', label: 'Two-column table (optional)', type: 'group',
+    help: 'Use for comparison / "feature vs benefit" tables. Leave the rows empty to hide it',
+    fields: [
+      { key: 'col1Label', label: 'Left column heading', type: 'text', maxLength: 60 },
+      { key: 'col2Label', label: 'Right column heading', type: 'text', maxLength: 60 },
+      { key: 'rows', label: 'Rows', type: 'list', itemLabel: 'Row', maxItems: 15, itemFields: [
+        { key: 'label', label: 'Left cell', type: 'text', maxLength: 80 },
+        { key: 'value', label: 'Right cell', type: 'textarea', maxLength: 500 },
+      ] },
+    ] },
+  { key: 'subsections', label: 'Sub-sections (optional)', type: 'list', itemLabel: 'Sub-section', maxItems: 5,
+    help: 'Only if the doc has an H3 heading inside this section', itemFields: subsectionFields },
+];
+
+const postFields = [
+  // ---- 1. Publishing -------------------------------------------------------
+  { key: 'slug', label: 'URL slug', type: 'text', maxLength: 90,
+    help: 'Lower-case, words joined by dashes. The page becomes /blogs/{slug}/ — never change this once a post is live' },
+  { key: 'title', label: 'Title (H1)', type: 'text', maxLength: 120,
+    help: 'The headline shown at the top of the article and on the listing card' },
+  { key: 'category', label: 'Category', type: 'text', maxLength: 40,
+    help: 'Water Automation | Water Conservation | Tips & Guides | Industry Insights | Product Updates' },
+  { key: 'categoryId', label: 'Category ID', type: 'text', maxLength: 20,
+    help: 'The matching short code: automation | conservation | guides | insights | updates' },
+  { key: 'date', label: 'Publish date', type: 'text', maxLength: 20, placeholder: '10 Jul 2026',
+    help: 'Format: DD Mon YYYY' },
+  { key: 'readTime', label: 'Read time', type: 'text', maxLength: 20, placeholder: '5 min read' },
+  { key: 'author', label: 'Author', type: 'text', maxLength: 60, placeholder: 'Aquabrim Team' },
+
+  // ---- 2. SEO --------------------------------------------------------------
+  { key: 'metaTitle', label: 'Meta title', type: 'text', maxLength: 65,
+    help: 'Google search result headline. Keep under 60 characters' },
+  { key: 'metaDescription', label: 'Meta description', type: 'textarea', maxLength: 165,
+    help: 'Google search result snippet. Aim for 150-160 characters' },
+
+  // ---- 3. Card & image -----------------------------------------------------
+  { key: 'image', label: 'Featured image', type: 'image',
+    help: 'Used on the listing card and as the large image at the top of the article' },
+  { key: 'imageAlt', label: 'Image alt text', type: 'text', maxLength: 160,
+    help: 'Describe the image for screen readers and image search' },
+  { key: 'excerpt', label: 'Card summary', type: 'textarea', maxLength: 320,
+    help: 'The 1-2 line teaser under the title on the /blogs listing page' },
+  { key: 'tags', label: 'Tags', type: 'list', itemLabel: 'Tag', maxItems: 10,
+    itemField: { key: 'tag', label: 'Tag', type: 'text', maxLength: 40 } },
+
+  // ---- 4. Article ----------------------------------------------------------
+  { key: 'quickAnswer', label: 'Quick Answer', type: 'textarea', maxLength: 700,
+    help: 'The highlighted box at the very top of the article — a direct 2-3 sentence answer. This is what Google pulls for featured snippets. Leave blank to hide it' },
+  { key: 'intro', label: 'Intro paragraphs', type: 'list', itemLabel: 'Paragraph', maxItems: 6,
+    help: 'The paragraphs that come before the first H2 heading',
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+  { key: 'sections', label: 'Sections', type: 'list', itemLabel: 'Section', maxItems: 20,
+    help: 'One Section per H2 heading in the doc, in order', itemFields: sectionFields },
+
+  // ---- 5. FAQs -------------------------------------------------------------
+  { key: 'faqs', label: 'FAQs', type: 'list', itemLabel: 'FAQ', maxItems: 12,
+    help: 'Shown as an accordion at the end of the article and submitted to Google as FAQ schema',
+    itemFields: [
+      { key: 'question', label: 'Question', type: 'text', maxLength: 160 },
+      { key: 'answer', label: 'Answer', type: 'textarea', maxLength: 700 },
+    ] },
+];
+
 const blogs = {
   slug: 'blogs',
   name: 'Blog',
@@ -6,7 +121,7 @@ const blogs = {
   sections: [
     {
       key: 'seo',
-      label: 'SEO',
+      label: 'SEO — listing page only',
       fields: [
         { key: 'metaTitle', label: 'Meta Title', type: 'text', maxLength: 65 },
         { key: 'metaDescription', label: 'Meta Description', type: 'textarea', maxLength: 165 },
@@ -21,7 +136,7 @@ const blogs = {
     },
     {
       key: 'hero',
-      label: 'Hero',
+      label: 'Listing page heading',
       fields: [
         { key: 'headingLine1', label: 'Heading Line 1', type: 'text', maxLength: 60 },
         { key: 'headingLine2', label: 'Heading Line 2', type: 'text', maxLength: 60 },
@@ -32,74 +147,94 @@ const blogs = {
       },
     },
     {
-      key: 'categories',
-      label: 'Categories',
-      fields: [
-        { key: 'categories', label: 'Categories', type: 'list', itemLabel: 'Category', maxItems: 10, itemFields: [
-          { key: 'id', label: 'ID', type: 'text', maxLength: 20 },
-          { key: 'name', label: 'Name', type: 'text', maxLength: 40 },
-          { key: 'count', label: 'Count', type: 'number' },
-        ] },
-      ],
-      default: {
-        categories: [
-          { id: 'all', name: 'All Posts', count: 24 },
-          { id: 'automation', name: 'Water Automation', count: 8 },
-          { id: 'conservation', name: 'Water Conservation', count: 6 },
-          { id: 'updates', name: 'Product Updates', count: 5 },
-          { id: 'insights', name: 'Industry Insights', count: 3 },
-          { id: 'guides', name: 'Tips & Guides', count: 2 },
-        ],
-      },
-    },
-    {
       key: 'posts',
       label: 'Blog Posts',
       fields: [
-        { key: 'posts', label: 'Posts', type: 'list', itemLabel: 'Post', maxItems: 30, itemFields: [
-          { key: 'id', label: 'ID', type: 'number' },
-          { key: 'title', label: 'Title', type: 'text', maxLength: 120 },
-          { key: 'description', label: 'Description', type: 'textarea', maxLength: 200 },
-          { key: 'category', label: 'Category (label)', type: 'text', maxLength: 40 },
-          { key: 'catId', label: 'Category ID', type: 'text', maxLength: 20, help: 'must match a category id' },
-          { key: 'date', label: 'Date', type: 'text', maxLength: 20 },
-          { key: 'readTime', label: 'Read Time', type: 'text', maxLength: 20 },
-          { key: 'img', label: 'Image', type: 'image' },
-        ] },
+        { key: 'posts', label: 'Posts', type: 'list', itemLabel: 'Post', maxItems: 40, itemFields: postFields },
       ],
+      // Defaults carry the publishing/SEO/card fields only. The article body of
+      // each existing post already ships with the site (src/data/blogs.ts) and is
+      // used automatically while the fields below are blank.
       default: {
         posts: [
-          { id: 1, category: 'Water Automation', catId: 'automation', date: '10 May 2025', readTime: '5 min read', title: 'Why Smart Water Level Controllers Are Essential for Every Home', description: 'Save water, prevent overflow, and ensure uninterrupted supply with smart automation.', img: '/assets/images/blog/blog-inner1.jpg' },
-          { id: 2, category: 'Product Updates', catId: 'updates', date: '06 May 2025', readTime: '4 min read', title: 'Introducing iBot 4G – Smarter, Faster & More Reliable', description: 'Our latest innovation comes with 4G connectivity, real-time alerts, and advanced safety.', img: '/assets/images/blog/blog-inner2.jpg' },
-          { id: 3, category: 'Water Conservation', catId: 'conservation', date: '02 May 2025', readTime: '6 min read', title: '10 Simple Ways to Conserve Water and Reduce Waste', description: 'Small changes can make a big difference. Start your journey towards a water-secure future.', img: '/assets/images/blog/blog-inner3.jpg' },
-          { id: 4, category: 'Industry Insights', catId: 'insights', date: '28 Apr 2025', readTime: '5 min read', title: 'Water Management Solutions for Apartments & Societies', description: 'How automation ensures fair usage, reduces wastage, and simplifies water management.', img: '/assets/images/blog/blog1.png' },
-          { id: 5, category: 'Water Automation', catId: 'automation', date: '24 Apr 2025', readTime: '4 min read', title: 'How Industrial Units Benefit from Smart Water Automation', description: 'Increase efficiency, reduce downtime, and optimize water usage with intelligent systems.', img: '/assets/images/blog/blog2.png' },
-          { id: 6, category: 'Tips & Guides', catId: 'guides', date: '20 Apr 2025', readTime: '3 min read', title: 'Dry Run Protection: Why It Can Save Your Motor & Money', description: 'Understand how dry run protection works and why it is crucial for your pumps and motors.', img: '/assets/images/blog/blog3.png' },
+          {
+            slug: 'fed-up-waking-early-municipal-water-supply-delhi',
+            title: 'Fed Up of Waking Up Early Just to Catch the Water Supply in Delhi?',
+            category: 'Water Automation',
+            categoryId: 'automation',
+            date: '10 Jul 2026',
+            readTime: '5 min read',
+            author: 'Aquabrim Team',
+            metaTitle: "Fed Up of Waking Up Early for Delhi's Water Supply? Read This | Aquabrim",
+            metaDescription:
+              "Tired of catching Delhi's irregular DJB municipal water supply by hand? Discover how a smart automatic water level controller solves this problem permanently, no more missed supply, no more overflows.",
+            image: '/assets/blogs/blogs1.webp',
+            imageAlt:
+              'Delhi apartment building with water tank - smart automatic water level controller solution by Aquabrim',
+            excerpt:
+              "If you live in Delhi, you know the drill: wake up before sunrise to catch the DJB supply, or wait another 24 hours. Here's the permanent, low-effort fix thousands of homeowners have already switched to.",
+            tags: ['Water Supply Delhi', 'DJB', 'Automatic Controller', 'Smart Home', 'Water Tank'],
+            quickAnswer: '',
+            intro: [],
+            sections: [],
+            faqs: [],
+          },
+          {
+            slug: 'why-every-home-needs-a-smart-water-level-controller',
+            title: 'Why Every Home Needs a Smart Water Level Controller',
+            category: 'Tips & Guides',
+            categoryId: 'guides',
+            date: '18 Jul 2026',
+            readTime: '4 min read',
+            author: 'Aquabrim Team',
+            metaTitle: 'Why Every Home Needs a Smart Water Level Controller | Aquabrim',
+            metaDescription:
+              "Tank overflow, dry motors, and manual switching are avoidable. Here's what a smart water level controller does, its advantages, and the main types.",
+            image: '/assets/blogs/blogs2.webp',
+            imageAlt: 'Smart water level controller installed above a home overhead tank',
+            excerpt:
+              "Most homes still manage water the way they did twenty years ago. A smart water level controller removes tank checking, overflow and dry-run worries from your daily routine, here's what it is and the types you'll come across.",
+            tags: ['Smart Water Level Controller', 'Home Automation', 'Water Management'],
+            quickAnswer: '',
+            intro: [],
+            sections: [],
+            faqs: [],
+          },
+          {
+            slug: 'what-makes-aquabrim-best-water-level-controller',
+            title: 'What Makes Aquabrim the Best Water Level Controller?',
+            category: 'Tips & Guides',
+            categoryId: 'guides',
+            date: '10 Aug 2026',
+            readTime: '6 min read',
+            author: 'Aquabrim Team',
+            metaTitle: 'What Makes Aquabrim the Best Water Level Controller?',
+            metaDescription:
+              "16+ years of experience, wireless sensors, dry-run protection, a full product range, and 50,000+ customers. Here's exactly what sets Aquabrim apart.",
+            image: '/assets/blogs/blogs1.webp',
+            imageAlt: 'Aquabrim smart water level controller installed in an Indian apartment',
+            excerpt:
+              'Aquabrim is built specifically for Indian water problems — irregular municipal supply, borewell dry-run risk, and multi-tank apartments. Here are the seven things that set it apart.',
+            tags: ['Best Water Level Controller', 'Aquabrim', 'Water Automation India'],
+            quickAnswer: '',
+            intro: [],
+            sections: [],
+            faqs: [],
+          },
         ],
       },
     },
     {
       key: 'featured',
-      label: 'Featured Post',
+      label: 'Featured Post Widget',
       fields: [
         { key: 'widgetHeading', label: 'Widget Heading', type: 'text', maxLength: 30 },
-        { key: 'image', label: 'Image', type: 'image' },
-        { key: 'category', label: 'Category', type: 'text', maxLength: 40 },
-        { key: 'date', label: 'Date', type: 'text', maxLength: 20 },
-        { key: 'readTime', label: 'Read Time', type: 'text', maxLength: 20 },
-        { key: 'title', label: 'Title', type: 'text', maxLength: 120 },
-        { key: 'description', label: 'Description', type: 'textarea', maxLength: 200 },
-        { key: 'link', label: 'Link', type: 'url', maxLength: 120 },
+        { key: 'postSlug', label: 'Which post to feature', type: 'text', maxLength: 90,
+          help: 'Paste the URL slug of one of the posts above. Leave blank to feature the newest post' },
       ],
       default: {
         widgetHeading: 'Featured Post',
-        image: '/assets/images/blog/blog-inner2.jpg',
-        category: 'Product Updates',
-        date: '15 Apr 2025',
-        readTime: '4 min read',
-        title: 'Understanding the Aquabrim Matrix Panel',
-        description: 'A complete overview of features, benefits, and real-world applications.',
-        link: '/blog-details',
+        postSlug: '',
       },
     },
     {
