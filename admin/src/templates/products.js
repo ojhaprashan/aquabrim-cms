@@ -74,7 +74,19 @@ const products = {
       key: 'catalog',
       label: 'Product Catalog',
       fields: [
-        { key: 'products', label: 'Products', type: 'list', itemLabel: 'Product', maxItems: 50, itemFields: productItemFields },
+        {
+          key: 'products', label: 'Products', type: 'list', itemLabel: 'Product',
+          maxItems: 50, itemFields: productItemFields,
+          // Table layout: rows you click into, instead of 50 products expanded
+          // down one page. `columns` are the summary cells shown per row.
+          layout: 'table',
+          thumbKey: 'images',
+          columns: [
+            { key: 'title', label: 'Product' },
+            { key: 'categoryName', label: 'Category', width: '150px' },
+            { key: 'slug', label: 'URL slug', width: '280px' },
+          ],
+        },
       ],
       default: {
         products: [

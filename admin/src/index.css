@@ -210,6 +210,44 @@ label.checkbox input { width: auto; }
 .list-item-title { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; color: var(--primary); }
 .list-item-actions { display: flex; gap: 4px; }
 
+/* ===== Table-style list (products, blog posts) ===== */
+.table-list { display: flex; flex-direction: column; gap: 12px; }
+.tl-search { max-width: 320px; }
+
+.tl-table { border: 1px solid var(--border); border-radius: 11px; overflow: hidden; background: #fff; }
+.tl-row { display: flex; align-items: center; gap: 12px; padding: 10px 14px; }
+.tl-head {
+  background: #f7f9fd; border-bottom: 1px solid var(--border);
+  font-size: 11px; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--muted);
+}
+.tl-body-row { border-top: 1px solid var(--border); cursor: pointer; transition: background 0.12s; }
+.tl-body-row:first-child { border-top: none; }
+.tl-body-row:hover { background: var(--primary-50); }
+.tl-body-row:focus-visible { outline: 2px solid var(--primary); outline-offset: -2px; }
+
+.tl-cell { flex: 1 1 0; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tl-cell-main { font-weight: 700; color: var(--text); }
+.tl-thumb-cell { flex: 0 0 44px; display: flex; }
+.tl-thumb { width: 44px; height: 44px; border-radius: 8px; object-fit: cover; border: 1px solid var(--border); background: #eef2f8; }
+.tl-thumb-empty { display: grid; place-items: center; color: var(--muted); border-style: dashed; }
+.tl-actions-cell { flex: 0 0 auto; display: flex; gap: 4px; }
+.tl-empty { padding: 26px; text-align: center; color: var(--muted); }
+
+.tl-detail-head {
+  display: flex; align-items: center; gap: 14px;
+  padding-bottom: 12px; border-bottom: 1px solid var(--border);
+}
+.tl-detail-title { flex: 1; min-width: 0; font-weight: 800; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tl-detail-body { display: flex; flex-direction: column; gap: 16px; padding-top: 4px; }
+
+.btn-sm { padding: 6px 12px; font-size: 13px; }
+
+@media (max-width: 760px) {
+  /* Drop secondary columns on small screens — the main column + actions stay. */
+  .tl-cell:not(.tl-cell-main) { display: none; }
+}
+
 .group-field { border-left: 2px solid var(--primary-100); padding-left: 16px; }
 .group-body { display: flex; flex-direction: column; gap: 14px; margin-top: 10px; }
 

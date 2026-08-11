@@ -150,7 +150,18 @@ const blogs = {
       key: 'posts',
       label: 'Blog Posts',
       fields: [
-        { key: 'posts', label: 'Posts', type: 'list', itemLabel: 'Post', maxItems: 40, itemFields: postFields },
+        {
+          key: 'posts', label: 'Posts', type: 'list', itemLabel: 'Post',
+          maxItems: 40, itemFields: postFields,
+          // Table layout: one row per article, click to open and edit it.
+          layout: 'table',
+          thumbKey: 'image',
+          columns: [
+            { key: 'title', label: 'Post' },
+            { key: 'category', label: 'Category', width: '160px' },
+            { key: 'date', label: 'Date', width: '120px' },
+          ],
+        },
       ],
       // Defaults carry the publishing/SEO/card fields only. The article body of
       // each existing post already ships with the site (src/data/blogs.ts) and is
