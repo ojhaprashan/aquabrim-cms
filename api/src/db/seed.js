@@ -1,7 +1,12 @@
 // Loads the site's full content into the `pages` table.
 //
-//   npm run seed          -> only fills pages whose content is still empty
-//   npm run seed -- --force  -> overwrites, even if the page has been edited
+//   npm run seed                  -> only fills pages whose content is still empty
+//   npm run seed -- --force       -> overwrites, even if the page has been edited
+//   npm run seed -- --prune-images -> delete seed-data/images once installed
+//
+// --prune-images reclaims the duplicate copy on a disk-tight server. The images
+// are git-tracked, so restore them before seeding again with:
+//   git checkout -- src/db/seed-data/images
 //
 // The JSON in ./seed-data is generated from the frontend's built-in data files
 // by `node scripts/generate-cms-seed.mjs` in the aquabrim_new repo. The site
@@ -40,6 +45,27 @@ const installImages = () => {
   return n;
 };
 
+// Remove the seed copies once they are safely in uploads/. Verifies each file
+// actually landed first — deleting the only other copy on a failed install would
+// leave the server with content pointing at images that no longer exist anywhere.
+const pruneSeedImages = () => {
+  if (!fs.existsSync(SEED_IMAGES_DIR)) return 0;
+  let removed = 0;
+  for (const name of fs.readdirSync(SEED_IMAGES_DIR)) {
+    const from = path.join(SEED_IMAGES_DIR, name);
+    if (!fs.statSync(from).isFile()) continue;
+
+    const installed = path.join(UPLOADS_DIR, name);
+    if (!fs.existsSync(installed) || fs.statSync(installed).size !== fs.statSync(from).size) {
+      console.warn(`• keeping ${name} — not found in uploads/ (or size differs)`);
+      continue;
+    }
+    fs.unlinkSync(from);
+    removed += 1;
+  }
+  return removed;
+};
+
 // slug -> the file holding that page's content.
 const SEEDS = [
   { slug: 'products', name: 'Products', file: 'products.json' },
@@ -47,6 +73,7 @@ const SEEDS = [
 ];
 
 const force = process.argv.includes('--force');
+const pruneImages = process.argv.includes('--prune-images');
 
 // A page counts as empty when it has no content at all, or only empty sections.
 const isEmpty = (content) => {
@@ -103,6 +130,14 @@ const run = async () => {
       );
       console.log(`✓ ${seed.slug}: seeded ${summarise(seed.slug, content)}${force ? ' (forced)' : ''}`);
     }
+    if (pruneImages) {
+      const removed = pruneSeedImages();
+      console.log(
+        `✓ images: pruned ${removed} seed copy/copies — restore with ` +
+          '`git checkout -- src/db/seed-data/images` before seeding again'
+      );
+    }
+
     console.log('✓ Seed complete');
   } catch (err) {
     console.error('✗ Seed failed:', err.message);
