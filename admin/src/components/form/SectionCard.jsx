@@ -21,6 +21,19 @@ export default function SectionCard({ section, value, onChange, defaultOpen }) {
 
   const setField = (fieldKey, v) => onChange({ ...data, [fieldKey]: v });
 
+  // Saved content always wins over a template default, which means a section
+  // saved once can never pick up defaults added to the template later (e.g. new
+  // products or a redesigned blog post form). This puts them back deliberately.
+  const hasDefault = section.default && Object.keys(section.default).length > 0;
+  const resetToDefault = () => {
+    const ok = window.confirm(
+      `Reset "${section.label}" to the built-in default?\n\n` +
+        'Everything you have typed in this section will be replaced. ' +
+        'Nothing is saved until you press "Save changes".'
+    );
+    if (ok) onChange(JSON.parse(JSON.stringify(section.default)));
+  };
+
   return (
     <div className="card section-card">
       <button type="button" className="section-head" onClick={() => setOpen(!open)}>
@@ -39,6 +52,14 @@ export default function SectionCard({ section, value, onChange, defaultOpen }) {
               onChange={(v) => setField(field.key, v)}
             />
           ))}
+
+          {hasDefault && (
+            <div className="section-footer">
+              <button type="button" className="btn btn-ghost btn-xs" onClick={resetToDefault}>
+                <i className="bi bi-arrow-counterclockwise"></i> Reset this section to default
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>

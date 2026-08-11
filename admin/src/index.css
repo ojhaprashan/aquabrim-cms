@@ -198,6 +198,7 @@ label.checkbox input { width: auto; }
 .section-chevron { font-size: 15px; color: var(--muted); transition: transform 0.2s; }
 .section-chevron.open { transform: rotate(180deg); }
 .section-body { padding: 20px; display: flex; flex-direction: column; gap: 16px; border-top: 1px solid var(--border); }
+.section-footer { display: flex; justify-content: flex-end; border-top: 1px dashed var(--border); padding-top: 14px; }
 
 /* ===== Fields ===== */
 .field { display: flex; flex-direction: column; }
