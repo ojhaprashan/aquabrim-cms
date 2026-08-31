@@ -1,18 +1,31 @@
-// Loads the site's full content into the `pages` table.
+// Pushes a PENDING content change into the `pages` table.
 //
 //   npm run seed                  -> only fills pages whose content is still empty
 //   npm run seed -- --force       -> overwrites, even if the page has been edited
 //   npm run seed -- --prune-images -> delete seed-data/images once installed
 //
-// --prune-images reclaims the duplicate copy on a disk-tight server. The images
-// are git-tracked, so restore them before seeding again with:
-//   git checkout -- src/db/seed-data/images
+// This is not a full re-seed of the site. ./seed-data holds only the pages that
+// have a change waiting to go live (see SEEDS below) and only the images those
+// pages introduce. A page already synced to the database is removed from here, so
+// running this on the server cannot touch content someone edited in the CMS.
 //
-// The JSON in ./seed-data is generated from the frontend's built-in data files
-// by `node scripts/generate-cms-seed.mjs` in the aquabrim_new repo. The site
-// reads its products and blog posts from this database only — there is no
-// fallback copy served to visitors — so these rows must be populated before the
-// site is built.
+// A live page already has its images in uploads/, which is gitignored — so a NEW
+// image can only reach the server through seed-data/images, and this script
+// installs those into uploads/ before writing the content that points at them.
+//
+// blogs.json is generated from the frontend's own data file by
+// `node scripts/generate-cms-seed.mjs` in the aquabrim_new repo. Note that the
+// generator still writes products.json and copies every image; delete what is
+// already synced again after running it.
+//
+// The site reads its products and blog posts from this database only — there is
+// no fallback copy served to visitors — so a page's row must be populated before
+// the site is built (`next build` is a static export and reads the CMS at build
+// time).
+//
+// --prune-images reclaims the duplicate copy on a disk-tight server. Restore the
+// images from git before seeding again:
+//   git checkout -- src/db/seed-data/images
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -67,8 +80,14 @@ const pruneSeedImages = () => {
 };
 
 // slug -> the file holding that page's content.
+//
+// Only the pages with a pending change are listed here. Everything else — the
+// products page and the rest of the site — is already in the database and is
+// deliberately NOT seeded, so a deploy can never overwrite content that was
+// edited in the CMS. Their seed files were removed once synced; recover one from
+// git history if a page ever has to be rebuilt from scratch:
+//   git log --diff-filter=D -- api/src/db/seed-data/products.json
 const SEEDS = [
-  { slug: 'products', name: 'Products', file: 'products.json' },
   { slug: 'blogs', name: 'Blog', file: 'blogs.json' },
 ];
 
@@ -87,7 +106,6 @@ const isEmpty = (content) => {
 
 // Short description of what a payload contains, for the log line.
 const summarise = (slug, content) => {
-  if (slug === 'products') return `${content?.catalog?.products?.length ?? 0} products`;
   if (slug === 'blogs') return `${content?.posts?.posts?.length ?? 0} posts`;
   return `${Object.keys(content || {}).length} sections`;
 };
