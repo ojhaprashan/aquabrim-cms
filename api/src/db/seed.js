@@ -1,13 +1,18 @@
 // Pushes a PENDING content change into the `pages` table.
 //
-//   npm run seed                  -> only fills pages whose content is still empty
-//   npm run seed -- --force       -> overwrites, even if the page has been edited
+//   npm run seed                   -> add the new posts; leave existing ones alone
+//   npm run seed -- --force        -> also overwrite posts already in the database
 //   npm run seed -- --prune-images -> delete seed-data/images once installed
 //
-// This is not a full re-seed of the site. ./seed-data holds only the pages that
-// have a change waiting to go live (see SEEDS below) and only the images those
-// pages introduce. A page already synced to the database is removed from here, so
-// running this on the server cannot touch content someone edited in the CMS.
+// This is not a full re-seed of the site. ./seed-data holds only what is waiting
+// to go live — the pages listed in SEEDS below, the posts not yet published, and
+// the images those posts introduce. Anything already synced is deleted from here,
+// so running this on the server cannot touch content someone edited in the CMS.
+//
+// Because seed-data holds only the NEW posts, this script MERGES rather than
+// overwrites (see mergeContent). The whole blog is a single JSONB row, so writing
+// the seed file over it would delete every post the file does not contain. Adding
+// a post is therefore safe to run against production at any time.
 //
 // A live page already has its images in uploads/, which is gitignored — so a NEW
 // image can only reach the server through seed-data/images, and this script
@@ -110,6 +115,61 @@ const summarise = (slug, content) => {
   return `${Object.keys(content || {}).length} sections`;
 };
 
+// Merge a seed file into what the page already holds, rather than replacing it.
+//
+// The whole blog is ONE row, so a straight overwrite would delete every post the
+// seed file does not happen to contain. That is the wrong shape for this project:
+// blogs.json carries only the posts waiting to go live, so the seed has to ADD
+// them to whatever is already published instead of standing in for it.
+//
+// Rules:
+//   - a post whose slug is already there is updated in place, keeping its position
+//   - a post whose slug is new is appended
+//   - every other post is left exactly as it is
+//   - page-level settings (seo, hero, featured, newsletter, cta) are only applied
+//     when the seed file actually carries them, so a posts-only file cannot wipe
+//     copy that was edited in the CMS
+//
+// Returns { content, added, updated } — the merged content to write.
+const mergeContent = (existing, incoming) => {
+  const base = existing && typeof existing === 'object' ? existing : {};
+
+  // Page-level sections: take only the keys the seed file defines.
+  const merged = { ...base };
+  for (const [key, value] of Object.entries(incoming)) {
+    if (key !== 'posts') merged[key] = value;
+  }
+
+  const currentPosts = Array.isArray(base.posts?.posts) ? base.posts.posts : [];
+  const incomingPosts = Array.isArray(incoming.posts?.posts) ? incoming.posts.posts : [];
+
+  if (!incomingPosts.length) {
+    return { content: merged, added: 0, updated: 0 };
+  }
+
+  const posts = [...currentPosts];
+  let added = 0;
+  let updated = 0;
+
+  for (const post of incomingPosts) {
+    const slug = (post?.slug ?? '').trim();
+    // A post with no slug has no address and would never be published anyway.
+    if (!slug) continue;
+
+    const at = posts.findIndex((p) => (p?.slug ?? '').trim() === slug);
+    if (at >= 0) {
+      posts[at] = post;
+      updated += 1;
+    } else {
+      posts.push(post);
+      added += 1;
+    }
+  }
+
+  merged.posts = { ...(base.posts || {}), ...(incoming.posts || {}), posts };
+  return { content: merged, added, updated };
+};
+
 const run = async () => {
   const client = await pool.connect();
   try {
@@ -131,22 +191,56 @@ const run = async () => {
       const { rows } = await client.query('SELECT content FROM pages WHERE slug = $1', [seed.slug]);
       const existing = rows[0]?.content;
 
-      if (!force && rows.length > 0 && !isEmpty(existing)) {
+      // An empty page is filled outright; an existing one is merged into, so
+      // nothing already published is lost. `--force` is no longer needed to add
+      // a post — it only decides whether a post already in the database may be
+      // overwritten by the seed file's copy of it.
+      const fresh = rows.length === 0 || isEmpty(existing);
+      const { content: merged, added, updated } = fresh
+        ? { content, added: (content?.posts?.posts ?? []).length, updated: 0 }
+        : mergeContent(existing, content);
+
+      if (!fresh && updated > 0 && !force) {
         console.log(
-          `• ${seed.slug}: already has content — skipped. ` +
-            'Re-run with `npm run seed -- --force` to overwrite.',
+          `• ${seed.slug}: ${updated} post(s) in the seed file already exist in the database. ` +
+            'They were left untouched — re-run with `npm run seed -- --force` to overwrite them.',
         );
-        continue;
       }
 
-      await client.query(
-        `INSERT INTO pages (slug, name, content)
-         VALUES ($1, $2, $3)
-         ON CONFLICT (slug) DO UPDATE
-           SET content = EXCLUDED.content, updated_at = now()`,
-        [seed.slug, seed.name, content],
+      // Without --force, an existing post keeps whatever the database holds.
+      const toWrite =
+        !fresh && !force && updated > 0
+          ? mergeContent(existing, {
+              ...content,
+              posts: {
+                ...(content.posts || {}),
+                posts: (content.posts?.posts ?? []).filter(
+                  (p) =>
+                    !(existing?.posts?.posts ?? []).some(
+                      (e) => (e?.slug ?? '').trim() === (p?.slug ?? '').trim(),
+                    ),
+                ),
+              },
+            }).content
+          : merged;
+
+      if (fresh || added > 0 || (updated > 0 && force)) {
+        await client.query(
+          `INSERT INTO pages (slug, name, content)
+           VALUES ($1, $2, $3)
+           ON CONFLICT (slug) DO UPDATE
+             SET content = EXCLUDED.content, updated_at = now()`,
+          [seed.slug, seed.name, toWrite],
+        );
+      }
+
+      const total = (toWrite?.posts?.posts ?? []).length;
+      console.log(
+        fresh
+          ? `✓ ${seed.slug}: seeded ${summarise(seed.slug, content)}`
+          : `✓ ${seed.slug}: ${added} added, ${force ? updated : 0} updated, ` +
+            `${total} post(s) now on the page`,
       );
-      console.log(`✓ ${seed.slug}: seeded ${summarise(seed.slug, content)}${force ? ' (forced)' : ''}`);
     }
     if (pruneImages) {
       const removed = pruneSeedImages();

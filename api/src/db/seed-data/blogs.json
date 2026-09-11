@@ -1,1364 +1,137 @@
 {
-  "seo": {
-    "metaTitle": "Water Automation Blog – Tips, Guides & Insights | Aquabrim",
-    "metaDescription": "Expert articles on water level controllers, dry-run protection, smart automation, water conservation & industry insights from Aquabrim — India's water automation specialists since 2008.",
-    "canonical": "/blogs/"
-  },
-  "hero": {
-    "headingLine1": "Water Automation Blog",
-    "headingLine2": "Expert Guides, Tips & Industry Insights"
-  },
   "posts": {
     "posts": [
       {
-        "slug": "fed-up-waking-early-municipal-water-supply-delhi",
-        "title": "Fed Up of Waking Up Early Just to Catch the Water Supply in Delhi?",
-        "category": "Water Automation",
-        "categoryId": "automation",
-        "date": "10 Jul 2026",
-        "readTime": "5 min read",
-        "author": "Aquabrim Team",
-        "metaTitle": "Fed Up of Waking Up Early for Delhi's Water Supply? Read This | Aquabrim",
-        "metaDescription": "Tired of catching Delhi's irregular DJB municipal water supply by hand? Discover how a smart automatic water level controller solves this problem permanently, no more missed supply, no more overflows.",
-        "image": "/uploads/blogs-blogs1.webp",
-        "imageAlt": "Delhi apartment building with water tank - smart automatic water level controller solution by Aquabrim",
-        "excerpt": "If you live in Delhi, you know the drill: wake up before sunrise to catch the DJB supply, or wait another 24 hours. Here's the permanent, low-effort fix thousands of homeowners have already switched to.",
-        "tags": [
-          "Water Supply Delhi",
-          "DJB",
-          "Automatic Controller",
-          "Smart Home",
-          "Water Tank"
-        ],
-        "quickAnswer": "",
-        "intro": [
-          "If you live in Delhi, whether it's Nangloi, Dwarka, Rohini, Uttam Nagar, or Mustafabad, you know the drill. The alarm goes off at 5:30 AM, not because you have somewhere to be, but because the DJB water supply might arrive anytime between now and 8 AM, and if you miss it, your overhead tank stays half-empty for another 24 hours.",
-          "You fill the tank manually, keep an ear out for the motor, worry about overflow, and then do the whole thing again the next morning. It is exhausting, and honestly, it should not work this way in 2025.",
-          "The good news? There is a straightforward, permanent fix that thousands of Delhi homeowners have already switched to. And no, it is not a bigger tank or a more complicated plumbing setup. It is a smart automatic water level controller, and once it is installed, you will genuinely forget that managing water supply was ever a daily task."
-        ],
-        "sections": [
-          {
-            "heading": "Why Delhi's Water Supply Problem Is So Hard to Manage",
-            "paragraphs": [
-              "Delhi's municipal water supply, distributed by the Delhi Jal Board (DJB), is notorious for being unpredictable. Supply timings vary by colony and season, pressure fluctuates, and in many areas, particularly in South and West Delhi, the daily supply window can be as short as 30 to 45 minutes.",
-              "The result is a city full of residents who have structured their entire mornings around catching water rather than getting on with their day. Here is what most Delhi households deal with every single day:"
-            ],
-            "bullets": [
-              "Waking up before sunrise just to manually start the motor when supply arrives",
-              "Running upstairs to check tank levels and stop the motor before it overflows",
-              "Missing the supply window entirely when the DJB timing shifts without warning",
-              "Motor damage from dry running when the municipal supply cuts out mid-fill",
-              "Water bills climbing because of overflow wastage nobody noticed in time",
-              "Women and elderly residents bearing the invisible daily burden of water management"
-            ],
-            "paragraphsAfter": [
-              "It is not a minor inconvenience. For families with working parents, elderly residents, or anyone living alone, managing this manually every day is a real and growing problem."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "What Happens When You Miss the Municipal Water Supply",
-            "paragraphs": [
-              "Missing even one DJB supply window can cascade into a difficult day. If your overhead tank is more than 60% empty when the supply is missed, you are likely short on water for cooking, bathing, and household use by evening.",
-              "And the more you try to compensate, running the motor on a borewell backup, filling from private tanker deliveries, or rationing usage, the more time and money it costs. In many Delhi colonies, a private water tanker delivering 1,000 litres can cost ₹500 to ₹1,500 during peak summer months."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "Quick fact",
-              "text": "In many Delhi colonies, DJB water supply arrives for less than 1 hour per day. Missing it once often means waiting 24 hours for the next supply window."
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "",
-            "paragraphs": [
-              "The real cost of managing municipal water supply manually in Delhi is not just the water you waste, it is the sleep you lose, the mornings you waste, and the low-level anxiety of never being quite sure whether your tank is full enough."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "A Smart Automatic Water Level Controller",
-            "paragraphs": [
-              "An automatic water level controller does exactly what the name says, it monitors your municipal supply line and your overhead tank continuously, without any input from you.",
-              "When DJB water supply arrives at your inlet pipe, the controller detects it automatically, within minutes of the supply reaching your line, even if the water pressure is low or the supply point is up to 50 metres from your motor installation. It then starts your motor, fills your tank, and cuts the motor off the moment your tank is full.",
-              "No alarm. No manual switch. No overflow. No dry run. Just a full tank every morning."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": [
-              {
-                "heading": "How It Works",
-                "paragraphs": [
-                  "The system has three main components working together:"
-                ],
-                "bullets": [
-                  "A water supply sensor (PRSR transmitter) connected to your municipal inlet pipe, detects when DJB water supply is flowing, even at low pressure",
-                  "A wireless tank level transmitter installed in your overhead tank, monitors the water level in real time and communicates wirelessly to the controller",
-                  "The controller unit mounted on your wall, receives signals from both sensors and automatically controls your motor with no manual input"
-                ],
-                "paragraphsAfter": [
-                  "All three components communicate wirelessly, no wiring needed between your roof tank and the controller, which makes installation clean and simple even in older Delhi buildings and multi-storey apartments."
-                ]
-              }
-            ]
-          },
-          {
-            "heading": "What the Controller Protects You From",
-            "paragraphs": [
-              "A smart water level controller goes beyond convenience. It actively protects your home and your motor from four common problems that cost Delhi residents money every year:"
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "Protection Feature",
-              "col2Label": "What It Does For You",
-              "rows": [
-                {
-                  "label": "Dry Run Protection",
-                  "value": "If municipal supply cuts out while your motor is running, the controller detects the interrupted flow instantly and stops the motor, preventing burnout. A motor replacement in Delhi costs ₹3,000-₹15,000. This alone pays for the controller."
-                },
-                {
-                  "label": "Overflow Prevention",
-                  "value": "Once your overhead tank reaches full capacity, the motor is cut off immediately, no water spilling over the roof, no ceiling seepage, no wasted water and no surprise water bill spikes."
-                },
-                {
-                  "label": "Voltage Protection",
-                  "value": "The system monitors power supply quality and stops the motor if voltage becomes unsafe, protecting against spikes and fluctuations common in Delhi's residential colonies."
-                },
-                {
-                  "label": "Missed Supply Prevention",
-                  "value": "Even if DJB water arrives at 4 AM while you're asleep, the controller detects it and fills your tank automatically. You wake up to a full tank, every single morning."
-                }
-              ]
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Is This Suitable for Delhi's Municipal Supply Setup?",
-            "paragraphs": [
-              "Yes, and it has specifically been designed for exactly this type of setup. Aquabrim's Trigger, for example, is built for homes and apartments that draw water directly from a municipal corporation supply line.",
-              "It handles the specific challenges of Delhi's water infrastructure:"
-            ],
-            "bullets": [
-              "Works even when supply pressure is low, the sensor can detect water availability up to 50 metres from the motor",
-              "Handles irregular DJB timings, because it monitors the supply line continuously, not at a fixed schedule",
-              "Suitable for apartments and independent houses, the controller mounts on any wall and sensors require no permanent plumbing changes",
-              "Supports multiple tanks, if your building or house has more than one overhead tank, additional sensors can be added"
-            ],
-            "paragraphsAfter": [
-              "If your home draws from a borewell or underground tank as a backup, there are separate controller models designed for that configuration as well."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Is Installation Complicated?",
-            "paragraphs": [
-              "Not at all. A complete automatic water level controller kit comes with everything needed for a standard installation, the controller unit, transmitters for the tank and inlet pipe, mounting hardware, and all connectors.",
-              "Installation typically involves:"
-            ],
-            "bullets": [
-              "Mounting the controller unit on a wall near your motor or electrical panel",
-              "Fixing the water supply sensor (PRSR transmitter) to your municipal inlet pipe",
-              "Attaching the tank level transmitter to your overhead tank's existing pipe or wall",
-              "Connecting the controller to your motor's electrical supply"
-            ],
-            "paragraphsAfter": [
-              "No civil work, no tank drilling, no permanent changes to your plumbing. The entire setup can be completed in a few hours, including in multi-storey apartment buildings across Delhi NCR."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "How Much Does It Cost And Is It Worth It?",
-            "paragraphs": [
-              "A smart automatic water level controller for a standard Delhi home is a one-time investment. When you weigh it against the daily effort of managing supply manually, the wasted water from overflow, and the potential cost of motor repair from dry run damage, the payback is typically within the first few months of use.",
-              "Think about it this way: a motor burnout from dry running can cost between ₹3,000 and ₹15,000 in repairs or replacement. A single prevention of that alone covers the cost of the controller and you've still got a lifetime of uninterrupted sleep ahead of you.",
-              "A smart water level controller is not an expense, it is the cost of never thinking about your water supply again."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "The Bottom Line",
-            "paragraphs": [
-              "Waking up early to catch Delhi's municipal water supply is a problem that has a permanent, affordable, and low-effort solution. An automatic water level controller removes the daily stress entirely, detecting DJB supply, filling your tank, and protecting your motor around the clock, without any manual input from you.",
-              "It is one of those home upgrades that, once installed, you wonder how you ever managed without it. Whether you're in Rohini, Dwarka, Nangloi, or anywhere else across Delhi NCR, the answer to your water problem is already available.",
-              "If you are in Delhi NCR and want to know which Aquabrim controller is right for your home setup, borewell, municipal, multi-tank, or a combination, our team is happy to help you find the right fit."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          }
-        ],
-        "faqs": [
-          {
-            "question": "Is an automatic water level controller compatible with Delhi's DJB municipal supply?",
-            "answer": "Yes. Controllers like Aquabrim's Trigger are specifically designed for homes connected to a municipal corporation supply line. The PRSR sensor detects DJB water supply in your inlet pipe and starts the motor automatically when supply arrives."
-          },
-          {
-            "question": "What if the DJB water supply arrives at night or in the early hours?",
-            "answer": "The controller monitors your supply line continuously, 24 hours a day. It will detect the supply and fill your tank automatically regardless of what time it arrives, even if you are asleep at 4 AM."
-          },
-          {
-            "question": "Will the motor run dry if the DJB supply cuts out mid-fill?",
-            "answer": "No. Dry run protection stops the motor automatically if water flow is interrupted. This prevents motor damage from running without water, protecting an appliance that can cost ₹3,000-₹15,000 to repair or replace."
-          },
-          {
-            "question": "Does the controller work in apartments or only independent houses?",
-            "answer": "It works in both. The controller mounts on any wall, and the sensors are wireless, no major modifications to the building's plumbing are needed. It is suitable for apartments, independent houses, and small commercial properties across Delhi NCR."
-          },
-          {
-            "question": "How quickly does the controller detect that DJB water supply has arrived?",
-            "answer": "The PRSR sensor detects water availability within minutes of supply reaching your inlet pipe, even if the water supply point is up to 50 metres away from where the motor is installed."
-          }
-        ]
-      },
-      {
-        "slug": "why-every-home-needs-a-smart-water-level-controller",
-        "title": "Why Every Home Needs a Smart Water Level Controller",
+        "slug": "how-to-install-aquabrim-water-level-controller",
+        "title": "How to Install Aquabrim Water Level Controller — A Complete Step-by-Step Guide",
         "category": "Tips & Guides",
         "categoryId": "guides",
-        "date": "18 Jul 2026",
-        "readTime": "4 min read",
-        "author": "Aquabrim Team",
-        "metaTitle": "Why Every Home Needs a Smart Water Level Controller | Aquabrim",
-        "metaDescription": "Tank overflow, dry motors, and manual switching are avoidable. Here's what a smart water level controller does, its advantages, and the main types.",
-        "image": "/uploads/blogs-blogs2.webp",
-        "imageAlt": "Smart water level controller installed above a home overhead tank",
-        "excerpt": "Most homes still manage water the way they did twenty years ago. A smart water level controller removes tank checking, overflow and dry-run worries from your daily routine, here's what it is and the types you'll come across.",
-        "tags": [
-          "Smart Water Level Controller",
-          "Home Automation",
-          "Water Management"
-        ],
-        "quickAnswer": "A smart water level controller automatically monitors your tank and switches the motor on or off, so it never overflows and never runs dry. It replaces manual checking and old float switches with a wireless sensor system, preventing water waste, motor damage, and the daily habit of remembering to check the tank.",
-        "intro": [
-          "Most homes still manage water the same way they did twenty years ago: someone checks the tank, someone remembers to switch the motor off, and when that doesn't happen, water overflows onto the terrace or the motor runs dry and burns out. A smart water level controller removes all of that from your daily routine. Here's what it actually is, why it matters, and the different types you'll come across."
-        ],
-        "sections": [
-          {
-            "heading": "What Is a Smart Water Level Controller?",
-            "paragraphs": [
-              "It's a small automated system that checks your tank's water level continuously using a sensor, and controls the motor based on what it finds. When the tank runs low, it switches the motor on. When the tank is full, it switches the motor off. No one has to check, remember, or manually operate a switch. Most modern versions use wireless sensors, so there's no cabling running between the tank and the controller, just a sensor in the tank and a control unit near the motor, talking to each other over radio signal."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "How Does It Actually Work?",
-            "paragraphs": [
-              "A sensor sits inside the tank and measures the water level in real time. That reading is sent wirelessly to a controller unit connected to your motor's power supply. Based on the level it receives, the controller decides whether the motor should be running or not, and acts on it immediately, without waiting for a person to notice or respond."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Advantages of a Smart Water Level Controller",
-            "paragraphs": [],
-            "bullets": [
-              "No more overflow: the motor shuts off automatically the moment the tank is full, so water doesn't spill onto your roof or floor",
-              "No more dry-run motor damage: the system protects the pump by stopping it if the water source runs too low, preventing burnout",
-              "Saves water and electricity: automated shutoff means the motor only runs exactly as long as it needs to",
-              "No manual checking: you stop needing to physically check tank levels or remember to switch the motor on or off",
-              "Works even when you're away: the system keeps managing the tank whether you're home or not",
-              "Simple installation: wireless systems avoid rewiring or cutting into walls between the tank and the motor panel"
-            ],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Types of Smart Water Level Controllers",
-            "paragraphs": [
-              "Not every home has the same water setup, so the right type depends on where your water actually comes from:"
-            ],
-            "bullets": [
-              "Municipal supply homes: need a controller built to catch water the moment it arrives on an unpredictable supply schedule",
-              "Borewell or submersible pump homes: need a controller that protects the motor by monitoring the source itself, not just the tank",
-              "Homes or societies with multiple tanks: need a system that can manage several tanks from one central controller instead of one unit per tank",
-              "Homes that just want alerts: some systems focus purely on monitoring and alarms rather than full motor automation"
-            ],
-            "paragraphsAfter": [
-              "For a full breakdown of each type and how to pick between them, our team can help you match the right controller to your exact water setup."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Who Actually Needs This the Most?",
-            "paragraphs": [
-              "Anyone who has ever forgotten to switch off a motor, dealt with a dry-run pump failure, or simply wants one less thing to manage at home. It matters even more for households relying on a borewell, since motor damage from dry-running is one of the most common and most avoidable repair costs in Indian homes."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          }
-        ],
-        "faqs": [
-          {
-            "question": "What does a smart water level controller actually do?",
-            "answer": "It automatically monitors your tank's water level and switches the motor on or off accordingly, preventing overflow and dry-run motor damage without needing anyone to check or operate it manually."
-          },
-          {
-            "question": "Is a smart water level controller different from a regular float switch?",
-            "answer": "Yes. A float switch is a basic mechanical device that can get stuck or wear out over time. A smart water level controller uses electronic sensors, is more reliable, and often adds features like dry-run protection, multi-tank support, and alerts."
-          },
-          {
-            "question": "Do I need special wiring to install one?",
-            "answer": "Most modern systems are wireless, meaning the sensor and controller communicate over radio signal, avoiding the need to run cables between the tank and the motor."
-          },
-          {
-            "question": "Can it prevent my motor from burning out?",
-            "answer": "Yes, for borewell and submersible pump setups, this is one of its main jobs, it stops the motor automatically if the water source runs too low, which is the most common cause of motor burnout."
-          },
-          {
-            "question": "Is one type of controller suitable for every home?",
-            "answer": "No. The right type depends on your water source, municipal supply, borewell, or multiple tanks each need a system built around that specific setup rather than one generic controller."
-          }
-        ]
-      },
-      {
-        "slug": "what-makes-aquabrim-best-water-level-controller",
-        "title": "What Makes Aquabrim the Best Water Level Controller?",
-        "category": "Tips & Guides",
-        "categoryId": "guides",
-        "date": "10 Aug 2026",
-        "readTime": "6 min read",
-        "author": "Aquabrim Team",
-        "metaTitle": "What Makes Aquabrim the Best Water Level Controller?",
-        "metaDescription": "16+ years of experience, wireless sensors, dry-run protection, a full product range, and 50,000+ customers. Here's exactly what sets Aquabrim apart.",
-        "image": "/uploads/blogs-blogs2.webp",
-        "imageAlt": "Aquabrim smart water level controller installed in an Indian apartment",
-        "excerpt": "Aquabrim is built specifically for Indian water problems — irregular municipal supply, borewell dry-run risk, and multi-tank apartments. Here are the seven things that set it apart.",
-        "tags": [
-          "Best Water Level Controller",
-          "Aquabrim",
-          "Water Automation India"
-        ],
-        "quickAnswer": "Aquabrim is built specifically for Indian water problems — irregular municipal supply, borewell dry-run risk, and multi-tank apartments. With 16+ years of experience, wireless sensor technology, dedicated motor protection, a mobile app for remote monitoring, and a product range that covers every home setup, Aquabrim delivers reliable water automation that generic controllers simply cannot match.",
-        "intro": [
-          "There are dozens of water level controllers available in India today. A quick search will show you options from ₹400 float switches to ₹15,000 industrial systems, from local shops to Amazon listings, from generic devices to branded products. So the real question isn't just which controller is cheapest or most commonly available, it's which one actually solves the water problems that Indian homes face every single day.",
-          "Aquabrim has been answering that question since 2008. Over 16 years, more than 50,000 homes, housing societies, hotels, hospitals, and industrial facilities across 15+ cities have trusted Aquabrim to manage their water automatically. That track record doesn't happen by accident. Here is exactly what sets Aquabrim apart from every other option in the market."
-        ],
-        "sections": [
-          {
-            "heading": "1. It Is Built Specifically for Indian Water Problems",
-            "paragraphs": [
-              "Most water level controllers available in India are generic products, designed for simple overhead tank setups in stable supply conditions. They were not built around the actual water challenges that Indian homes deal with daily.",
-              "Aquabrim was. Its entire product range is designed around three specific Indian water realities:"
-            ],
-            "bullets": [
-              "Municipal supply that arrives unpredictably, sometimes at 5 AM, sometimes skipped entirely, and needs to be captured the moment it arrives",
-              "Borewell and submersible pump setups where the motor can burn out if it runs without water in the source",
-              "Multi-tank buildings, apartments and housing societies, where one controller needs to manage the full system, not just a single tank"
-            ],
-            "paragraphsAfter": [
-              "No generic controller addresses all three of these. [Aquabrim's product range](/products/) does, with a dedicated product for each scenario."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "2. 16+ Years of Real-World Experience in Indian Conditions",
-            "paragraphs": [
-              "Experience matters in a product that runs continuously, every day, in conditions that vary significantly across India, voltage fluctuations, hard water, extreme heat, and water that is sometimes barely a trickle.",
-              "Since 2008, Aquabrim has installed water management systems across:"
-            ],
-            "bullets": [
-              "Individual homes and builder flats in Delhi, NCR, and major metros",
-              "Large residential societies and apartment complexes",
-              "Five-star hotels including Radisson Blu and Hyatt Regency",
-              "Government and industrial facilities including Indian Railways, BHEL, Indian Oil, and CPWD"
-            ],
-            "paragraphsAfter": [
-              "That range of installation environments means Aquabrim's products have been tested in real Indian conditions and refined over time to handle whatever comes. The reliability you get from an Aquabrim product is not theoretical, it is the outcome of 16 years of solving real problems in the field."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "3. Wireless Sensor Technology",
-            "paragraphs": [
-              "One of the biggest friction points with older water level controllers is installation. Traditional wired systems require cables to run from the sensor in the overhead tank all the way down to the motor panel, through walls, across terraces, down stairwells. This means drilling, rewiring, and significant installation work.",
-              "Aquabrim uses wireless sensor technology throughout its product range. The sensor sits inside the tank and communicates with the controller near the motor over a radio signal. No cables between the tank and the motor panel. No wall cutting. No rewiring.",
-              "The practical benefits of this are significant:"
-            ],
-            "bullets": [
-              "Faster, cleaner installation typically done in a few hours",
-              "No ongoing cable maintenance or damage from water exposure",
-              "Works cleanly in buildings where running new cables is impractical or expensive",
-              "Sensors can be placed accurately in the tank without cable length restrictions"
-            ],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "4. Dedicated Dry-Run Motor Protection",
-            "paragraphs": [
-              "Motor dry run is one of the most common and most expensive water-related problems in Indian homes, particularly those on borewell or submersible pump setups. When a pump runs without water, because the underground source has run low or the supply has been cut, it overheats rapidly and can burn out within minutes. Replacing a motor can cost ₹5,000 to ₹20,000 depending on the type.",
-              "Aquabrim's [Macro controller](/products/macro-borewell-water-controller/) addresses this at the source. Rather than only monitoring the overhead tank, it monitors the water level in the source, the sump or underground tank, and stops the motor automatically if the source runs too low. The motor never runs dry because the system catches the problem before it can happen.",
-              "This is fundamentally different from controllers that only monitor the tank and let the motor run regardless of what's happening at the source. For anyone on a borewell or submersible pump, this single feature can save the cost of the entire system multiple times over."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "5. App-Based Remote Monitoring",
-            "paragraphs": [
-              "Most basic water level controllers give you no visibility. The system runs automatically in the background, and you only discover something went wrong after the tank is already empty, the motor has burned out, or water has been overflowing onto the terrace for hours.",
-              "Aquabrim's smart systems connect to a web platform and mobile app that gives you real-time visibility into:"
-            ],
-            "bullets": [
-              "Current water level in the tank",
-              "Motor status — whether it is running, stopped, or in a fault state",
-              "System alerts — overflow risk, dry-run risk, supply detected",
-              "Historical usage patterns and motor run logs"
-            ],
-            "paragraphsAfter": [
-              "This is particularly valuable for homeowners who travel, apartment residents whose tank is on an inaccessible rooftop, and facility managers who oversee multiple buildings from a central location. You do not need to be physically present to know your water system is working correctly."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "6. A Purpose-Built Product for Every Type of Home",
-            "paragraphs": [
-              "Generic water level controllers try to be one solution for every setup. Aquabrim takes the opposite approach, a dedicated product, built around the specific requirements of each type of water source and home configuration."
-            ],
-            "bullets": [
-              "[Trigger](/products/trigger-municipal-water-controller/) — For homes connected to municipal supply. It detects when water pressure arrives in the supply line and automatically starts the motor, so you never miss the morning supply window even if you are asleep or away. This is the right product for Delhi, Mumbai, and most tier-1 city homes that rely on corporation water.",
-              "[Macro](/products/macro-borewell-water-controller/) — For borewell and submersible pump setups. It monitors the source water level, not just the overhead tank, and stops the motor automatically if the source runs too low. This is the right product for homes in areas where borewell water is the primary source.",
-              "[Matrix](/products/matrix-multi-tank-controller/) — For apartments, housing societies, and commercial buildings with multiple tanks. One Matrix controller manages the entire water system across tanks, reducing the need for multiple individual units and giving central control to the facility manager.",
-              "[Flexibell](/products/flexibell-water-level-alarm/) — For setups that need water level monitoring and alerts but not full motor automation. It acts as a wireless alarm system, alerting you when the tank is low or overflowing without taking control of the motor."
-            ],
-            "paragraphsAfter": [
-              "Each product uses the same core wireless sensor technology and connects to the Aquabrim app. You are not choosing between features, you are choosing the product that fits your specific setup."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "7. Trusted by 50,000+ Customers",
-            "paragraphs": [
-              "Anyone can claim their product is the best. The more meaningful measure is who has actually installed it and kept it running.",
-              "Aquabrim has 50,000+ installations across India, spanning individual homeowners, large residential societies, five-star hotels, government departments, and major industrial facilities. Clients include Radisson Blu, Hyatt Regency, BHEL, Indian Oil, Indian Railways, Emaar Properties, Coca-Cola, and Unilever, organisations that have high standards for the systems they install and maintain.",
-              "That breadth of customer base, from a single apartment in Gurugram to a large industrial plant, reflects a product that performs reliably across very different operating environments. It is also the reason Aquabrim has been refining its products for 16 years rather than being replaced by newer entrants: when something works consistently, people keep recommending it."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Is Aquabrim the Right Choice for Your Home?",
-            "paragraphs": [
-              "If any of the following applies to you, the answer is yes:"
-            ],
-            "bullets": [
-              "You have manually switched a motor on and off at least once this week",
-              "Your tank has overflowed onto the terrace or caused seepage in the last year",
-              "Your motor has had a dry-run burnout or you are worried about this happening",
-              "You are on municipal supply and have missed the morning water window",
-              "You live in an apartment and have no easy way to check the tank level",
-              "You manage a building or housing society and need a centralised water system"
-            ],
-            "paragraphsAfter": [
-              "Aquabrim removes all of these problems permanently. The right product for your setup depends on your water source, the [product page](/products/) explains each system clearly, or you can contact the team to get a recommendation for your specific configuration."
-            ],
-            "highlight": {
-              "title": "New to water controllers?",
-              "text": "Start with [Why Every Home Needs a Smart Water Level Controller](/blogs/why-every-home-needs-a-smart-water-level-controller/) for a plain-language explanation of what these systems do and the main types available."
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          }
-        ],
-        "faqs": [
-          {
-            "question": "What is the best water level controller brand in India?",
-            "answer": "Aquabrim is one of the most trusted brands for smart wireless water level controllers in India, with 16+ years of experience and over 50,000 systems installed across homes, apartments, and commercial buildings across 15+ cities."
-          },
-          {
-            "question": "Why is Aquabrim better than a basic float switch?",
-            "answer": "A float switch is a mechanical device that can get stuck, wear out, or fail without warning. Aquabrim uses electronic wireless sensors that are more accurate and reliable, adds dry-run motor protection, supports app-based monitoring, and covers multi-tank setups, none of which a basic float switch can do."
-          },
-          {
-            "question": "Does Aquabrim work with both municipal supply and borewell setups?",
-            "answer": "Yes. The Trigger product is designed specifically for municipal supply lines, detecting when water arrives and starting the motor automatically. The Macro is built for borewell and submersible pump systems, monitoring the source itself to prevent dry run. Both use wireless sensors and fully automatic motor control."
-          },
-          {
-            "question": "Can I monitor my water tank from my phone with Aquabrim?",
-            "answer": "Yes. Aquabrim's systems connect to a web platform and a mobile app that gives you real-time visibility into water levels, motor status, and alerts, from anywhere, without needing to go up to the tank or motor panel."
-          },
-          {
-            "question": "How long has Aquabrim been making water level controllers?",
-            "answer": "Aquabrim has been manufacturing and installing smart water level controllers since 2008, over 16 years, across residential homes, housing societies, commercial buildings, hospitals, railways, and industrial facilities in more than 15 cities across India."
-          }
-        ]
-      },
-      {
-        "slug": "how-to-manage-multiple-water-tanks-automatically",
-        "title": "How to Manage Multiple Water Tanks Automatically",
-        "category": "Water Automation",
-        "categoryId": "automation",
-        "date": "28 Aug 2026",
+        "date": "11 Sep 2026",
         "readTime": "8 min read",
         "author": "Aquabrim Team",
-        "metaTitle": "How to Manage Multiple Water Tanks Automatically | Aquabrim",
-        "metaDescription": "Managing multiple water tanks manually wastes water and electricity. Learn how a multi tank water level controller automates everything — no overflow, no dry run.",
-        "image": "/uploads/blogs-multi-tank-water-level-controller-india.webp",
-        "imageAlt": "Multi tank water level controller system managing multiple overhead tanks in an apartment building India",
-        "excerpt": "If your building has more than one water tank, manual management stops working fast. Here is how a multi tank water level controller monitors every tank and runs the pump for you, no overflow, no dry run, no manpower.",
+        "metaTitle": "How to Install Aquabrim Water Level Controller | Guide",
+        "metaDescription": "Learn how to install Aquabrim's wireless water level controller step by step — sensor placement, wall mounting, motor wiring, app setup and post-install checks.",
+        "image": "/uploads/blogs-how-to-install-aquabrim-water-level-controller.webp",
+        "imageAlt": "Aquabrim wireless water level controller installation — sensor in overhead tank and controller on wall near motor",
+        "excerpt": "Six steps, one afternoon, and no cables between your tanks. Here is the complete installation process for Aquabrim's Trigger, Macro and Matrix controllers — from sensor placement to the app setup.",
         "tags": [
-          "Multi Tank Water Level Controller",
+          "Aquabrim Installation",
+          "Water Level Controller Setup",
+          "How to Install Water Level Controller",
+          "Aquabrim Trigger",
+          "Aquabrim Macro",
+          "Wireless Water Level Sensor",
           "Water Tank Automation",
-          "Automatic Water Level Controller",
-          "Apartment Water Management",
-          "Smart Water Controller",
-          "Wireless Water Level Controller",
-          "Matrix Controller",
-          "Water Level Monitoring"
+          "Motor Controller Wiring"
         ],
-        "quickAnswer": "A multi tank water level controller is a system that automatically monitors the water levels in multiple tanks and controls the pumps accordingly — filling each tank when needed and stopping the pump when full. It eliminates manual switching, prevents overflow, protects pumps from dry run, and ensures consistent water supply across all tanks without any human intervention.",
+        "quickAnswer": "Installing an Aquabrim water level controller involves four main tasks: placing the wireless transmitter inside your overhead tank, fixing the second transmitter in your underground tank or borewell (for Macro and Matrix models), mounting the controller unit on a wall near your motor, and having a qualified electrician connect the controller to your motor circuit. The full installation typically takes two to four hours. The sensors are wireless — no cables run between the tanks and the controller.",
         "intro": [
-          "If your building has more than one water tank, you already know the problem. Someone has to check each tank, judge when to start the pump, stay alert to stop it before it overflows, and repeat this throughout the day, every day.",
-          "In an apartment with three tanks on different floors, or a housing society with tanks across multiple towers, this becomes an almost impossible task to do manually without things going wrong. Water overflows. Some tanks run empty while others are full. The pump runs dry when no one is watching. Electricity bills stay higher than they should.",
-          "The solution is a [multi tank water level controller](/products/matrix-multi-tank-controller) — a system that monitors all your tanks automatically and manages pump operation without any human involvement. This guide explains how it works, who needs it, and what to look for before you buy."
+          "Getting an Aquabrim system up and running is significantly simpler than most people expect. Unlike older wired controllers that required cables to run between every tank and the motor panel, Aquabrim uses RF-based wireless sensor technology — meaning the only wiring involved is the connection from the controller unit to your motor's power supply.",
+          "This guide walks through the complete installation process for Aquabrim's residential and commercial models, with separate sections for the [Trigger](/products/trigger-municipal-water-controller) (municipal supply), [Macro](/products/macro-borewell-water-controller) (borewell), and [Matrix](/products/matrix-multi-tank-controller) (multi-tank) where the steps differ. Read through the full guide before starting — understanding the process end-to-end makes each individual step easier.",
+          "If you are not yet sure which model is right for your home, read the guide on [choosing the right water level controller](/blogs/water-level-controller-buying-guide) before returning here."
         ],
         "sections": [
           {
-            "heading": "Why Managing Multiple Water Tanks Manually Is Difficult",
-            "paragraphs": [
-              "The challenge with multiple tanks is not just volume, it is coordination. Each tank has its own level, its own supply requirement, and its own relationship to the pump and the source. Keeping track of all of this manually, around the clock, is simply not practical.",
-              "Here is what typically goes wrong when multi-tank buildings rely on manual management:"
-            ],
-            "bullets": [
-              "Maintenance staff cannot physically check multiple tanks simultaneously, especially across floors or towers",
-              "Pumps are switched on and off based on guesswork rather than actual tank levels",
-              "Tanks overflow when staff are occupied elsewhere or when the pump is forgotten running overnight",
-              "Some tanks run empty and cause water shortage on specific floors while other tanks are full",
-              "Pumps run dry when the underground sump runs out, leading to expensive motor burnout",
-              "Water and electricity are wasted continuously because there is no precise cutoff point"
-            ],
-            "paragraphsAfter": [
-              "The more tanks a building has, the more these problems compound. What might be manageable with one tank becomes genuinely chaotic with three or four."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Common Problems Faced in Apartments, Villas and Commercial Buildings",
-            "paragraphs": [
-              "Across India, buildings with multiple tanks face the same set of recurring problems, regardless of whether they are five-storey apartments or large commercial complexes."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": [
-              {
-                "heading": "Overflowing Tanks",
-                "paragraphs": [
-                  "Overflow is the most visible and most common problem. When a pump is not switched off at the right moment, water spills over the top of the tank onto the terrace, down walls, or into the building structure. Over time, this causes seepage, dampness, and in serious cases, structural damage. The water wasted in a single overflow event can be significant, and it happens repeatedly when management is manual."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Uneven Water Distribution",
-                "paragraphs": [
-                  "In a building with multiple tanks serving different floors or wings, manual filling often results in some tanks being topped up while others remain at low levels. Residents on certain floors experience low water pressure or shortage while tanks elsewhere are at capacity."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Pump Damage from Dry Run",
-                "paragraphs": [
-                  "When an underground sump runs low and nobody notices, the pump continues running without water, a condition called dry run. A motor running dry can burn out within minutes. Replacing a submersible or monoblock pump is an expensive, time-consuming repair that is entirely avoidable with the right level of monitoring."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Higher Electricity Bills",
-                "paragraphs": [
-                  "Pumps running longer than necessary, because no one switched them off at the right time, contribute directly to higher electricity consumption. In large buildings with high-capacity pumps, even a few extra hours of daily pump runtime adds up to a significant monthly cost."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Maintenance Cost and Manpower Dependency",
-                "paragraphs": [
-                  "Manual water management in multi-tank buildings requires dedicated maintenance staff. This represents an ongoing cost and a dependency that creates problems during staff absences, shift changes, and night hours when no one is on duty."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              }
-            ]
-          },
-          {
-            "heading": "What Is a Multi Tank Water Level Controller?",
-            "paragraphs": [
-              "A [water level controller](/) is a system that uses sensors to measure water levels and automatically controls pumps based on those readings. A multi tank version extends this capability to handle several tanks simultaneously from a single control unit.",
-              "The system consists of three main components working together:"
-            ],
-            "bullets": [
-              "Sensors — placed inside each tank (and usually in the underground sump as well), these measure the current water level continuously and send that data to the controller",
-              "Control unit — receives level data from all sensors and makes decisions about when to start and stop the pump, based on pre-set upper and lower thresholds for each tank",
-              "Pump interface — the controller connects to the pump's power supply and switches it on or off automatically based on the instructions from the control logic"
-            ],
-            "paragraphsAfter": [
-              "In a wireless system, the sensors communicate with the control unit over radio signal, so no cables are needed between the tanks and the controller. This is particularly important in multi-storey buildings where running cables across floors and through walls would be expensive and invasive.",
-              "The key difference between a single-tank controller and a multi-tank system is the ability to coordinate across multiple tanks simultaneously: prioritising which tank fills first, managing the pump to avoid overloading, and ensuring every tank in the building maintains adequate water levels."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "How Automatic Multi Tank Controllers Work",
-            "paragraphs": [
-              "The process is straightforward once you understand the logic. Here is how a typical multi tank controller operates, step by step:"
-            ],
-            "bullets": [
-              "Tank level detection — the sensor in each tank reads the current level continuously",
-              "The controller receives the sensor data from every tank and from the sump",
-              "The pump turns ON automatically for whichever tank needs filling next",
-              "The tank fills to its target level while the controller monitors progress",
-              "The pump turns OFF automatically the moment that target level is reached"
-            ],
-            "paragraphsAfter": [
-              "In practice, the system runs this cycle continuously for each tank in the building. The controller checks the levels of all tanks and the sump, determines which tank needs filling next based on priority settings, activates the pump, monitors the fill progress, and stops the pump when the tank reaches its target level.",
-              "If the sump level drops too low during this process, the controller stops the pump immediately, before dry run can cause motor damage, and waits until the source replenishes.",
-              "All of this happens automatically, without any manual input. The [wireless water level controllers](/products) that use app connectivity also send real-time alerts to a mobile device if any tank drops below a warning level, or if the pump has been running longer than expected."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Benefits of Automating Multiple Water Tanks",
-            "paragraphs": [
-              "The shift from manual to automatic management produces measurable improvements across water use, electricity consumption, pump lifespan, and maintenance workload. Here is the full comparison:"
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "Benefit",
-              "col2Label": "Without a controller, and with a multi tank controller",
-              "rows": [
-                {
-                  "label": "Overflow prevention",
-                  "value": "Without: tanks overflow regularly, wasting water and causing seepage damage. With: the controller stops the pump automatically when a tank reaches its full level."
-                },
-                {
-                  "label": "Water wastage",
-                  "value": "Without: hundreds of litres lost monthly to overflow. With: near-zero overflow, every litre goes where it should."
-                },
-                {
-                  "label": "Electricity bills",
-                  "value": "Without: the pump runs longer than needed, wasting electricity. With: the pump runs only as long as required, so monthly bills drop."
-                },
-                {
-                  "label": "Pump protection",
-                  "value": "Without: dry run goes undetected and the motor burns out. With: dry-run cutoff stops the pump before damage occurs."
-                },
-                {
-                  "label": "Water distribution",
-                  "value": "Without: some tanks overfill while others run empty. With: balanced, prioritised filling across all tanks."
-                },
-                {
-                  "label": "Manpower needed",
-                  "value": "Without: someone must check levels and switch pumps manually. With: fully automatic, zero manpower for routine operation."
-                },
-                {
-                  "label": "Remote monitoring",
-                  "value": "Without: no visibility, problems are found only after they occur. With: app-based alerts give real-time status from anywhere."
-                }
-              ]
-            },
-            "subsections": []
-          },
-          {
-            "heading": "",
-            "paragraphs": [
-              "The financial case for automation is straightforward: the cost of a quality multi tank controller is typically recovered within the first year through reduced water wastage, lower electricity bills, and avoided pump repair costs."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Who Needs a Multi Tank Water Level Controller?",
-            "paragraphs": [
-              "Any building or facility with more than one water tank will benefit from automation. Here is a breakdown by building type:"
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "Building type",
-              "col2Label": "Typical tank setup and why automation matters",
-              "rows": [
-                {
-                  "label": "Apartments (5+ floors)",
-                  "value": "2–4 overhead tanks plus an underground sump. Multiple floors need consistent pressure, and manual management fails quickly."
-                },
-                {
-                  "label": "Housing Society / RWA",
-                  "value": "4–10+ tanks across multiple towers. One staff member cannot manually manage multiple buildings effectively."
-                },
-                {
-                  "label": "Villas / Bungalows",
-                  "value": "2–3 tanks (main, garden and backup). Owner-managed properties benefit most from hands-free automation."
-                },
-                {
-                  "label": "Hotels & Resorts",
-                  "value": "5–15 tanks across floors and wings. Guest experience depends on uninterrupted water, so manual is too unreliable."
-                },
-                {
-                  "label": "Hospitals",
-                  "value": "6–20 tanks (sterile, general and fire). Water continuity is a safety requirement, so automation is non-negotiable."
-                },
-                {
-                  "label": "Schools & Colleges",
-                  "value": "2–5 tanks across blocks. Water shortage during peak hours causes serious operational disruption."
-                },
-                {
-                  "label": "Factories & Industries",
-                  "value": "10–50+ tanks across zones. Industrial operations cannot afford manual water management at scale."
-                },
-                {
-                  "label": "Commercial Buildings",
-                  "value": "3–8 tanks across floors. Facility managers need centralised control, not manual floor-by-floor checks."
-                }
-              ]
-            },
-            "subsections": []
-          },
-          {
-            "heading": "",
-            "paragraphs": [
-              "The common thread across all of these is that manual management creates a dependency on human attention that is simply not sustainable, particularly at night, during peak demand hours, or when staff are unavailable. Automation removes that dependency permanently."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Choosing the Right Multi Tank Water Level Controller",
-            "paragraphs": [
-              "Not all multi tank controllers are equal. Before purchasing, work through these eight factors:"
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "Factor",
-              "col2Label": "What to check, and why it matters",
-              "rows": [
-                {
-                  "label": "Number of tanks",
-                  "value": "How many tanks does the system need to manage? The controller must support your current count, and ideally more, for future expansion."
-                },
-                {
-                  "label": "Wireless range",
-                  "value": "What is the maximum distance between the tanks and the control unit? The wireless range must cover the full site without signal loss."
-                },
-                {
-                  "label": "Scalability",
-                  "value": "Can more tanks be added later without replacing the system? Scalable systems grow with the building; non-scalable ones become obsolete."
-                },
-                {
-                  "label": "Dry-run protection",
-                  "value": "Does it monitor the source (sump or borewell) as well as the tanks? Without source monitoring, pumps burn out when the supply runs low."
-                },
-                {
-                  "label": "Overflow protection",
-                  "value": "Does it stop the pump before the tank overflows? Overflow causes water wastage and structural damage, basic but essential."
-                },
-                {
-                  "label": "Remote monitoring",
-                  "value": "Can you monitor levels and get alerts from a mobile app? Essential for facilities where the control room is not next to the tanks."
-                },
-                {
-                  "label": "Installation complexity",
-                  "value": "Does installation require cabling between tanks? Wireless systems save significant installation cost in large buildings."
-                },
-                {
-                  "label": "Brand and warranty",
-                  "value": "Is after-sales support available, with a minimum one-year warranty? Multi-tank systems in large buildings must have reliable service backup."
-                }
-              ]
-            },
-            "subsections": []
-          },
-          {
-            "heading": "",
-            "paragraphs": [
-              "The most common mistake buyers make is choosing based on price alone. A controller that lacks dry-run protection or overflow cutoff may seem cheaper upfront but will cost significantly more over time through pump repairs and water wastage."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Why Aquabrim Matrix Is Built for Multi Tank Management",
-            "paragraphs": [
-              "Aquabrim has been building water management systems for Indian homes, apartments, and industries since 2008. The [Aquabrim Matrix Multi Tank Water Level Controller](/products/matrix-multi-tank-controller) is the company's dedicated solution for buildings that need to manage more than one tank from a single automated system.",
-              "Here is what the Matrix is designed to do:"
-            ],
-            "bullets": [
-              "Multiple tank support — the Matrix manages several tanks simultaneously, coordinating pump operation across all of them from one central controller",
-              "Wireless operation — sensors communicate with the control unit over radio signal, so no cables are required between tanks and the controller, even across floors or buildings",
-              "Automatic pump control — the pump starts and stops based on actual tank levels, not manual judgment, eliminating the most common cause of overflow and dry run",
-              "Overflow protection — the controller stops the pump the moment any tank reaches its full level, preventing water wastage and terrace flooding",
-              "Dry-run protection — the system monitors the source water level as well as the tanks, so if the sump runs low the pump stops automatically before motor damage can occur",
-              "App-based monitoring — connect to the Aquabrim platform for real-time tank level visibility, motor status updates, and alerts from any device",
-              "Easy installation — the wireless design means sensors can be placed in tanks without running cables back to the control unit, reducing installation time significantly",
-              "Reliable performance — built for Indian operating conditions, designed to handle voltage fluctuations, hard water environments, and variable supply schedules"
-            ],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "Ready to automate your multi-tank water management?",
-              "text": "If you are looking for a reliable way to automate multiple water tanks, explore the [Aquabrim Matrix Multi Tank Water Level Controller](/products/matrix-multi-tank-controller) and see how it simplifies water management for homes, apartments, and commercial buildings. You can also [view all wireless water level controllers](/products)."
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Conclusion",
-            "paragraphs": [
-              "Managing multiple water tanks manually is not just inconvenient, it is expensive, unreliable, and ultimately unsustainable for any building that needs consistent water supply. A multi tank water level controller replaces manual judgment with automatic precision: every tank fills when it should, the pump stops the moment it should, and nothing overflows or runs dry.",
-              "For apartments, housing societies, commercial buildings, hospitals, and industrial facilities across India, the case for automation is straightforward. The technology is available, the installation is simple, and the returns, in saved water, saved electricity, and avoided repairs, arrive quickly.",
-              "If your building has more than one tank and water management is still a daily manual task, automation is the logical next step. Read next: [why every home needs a smart water level controller](/blogs/why-every-home-needs-a-smart-water-level-controller)."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          }
-        ],
-        "faqs": [
-          {
-            "question": "How does a multi tank water level controller work?",
-            "answer": "A multi tank water level controller uses wireless sensors placed inside each tank to measure the water level continuously. These sensors send readings to a central control unit, which automatically turns the pump on when a tank falls below a set level and turns it off when the tank is full. The system manages multiple tanks simultaneously, ensuring each fills in the correct sequence without overflow or dry run."
-          },
-          {
-            "question": "Can one controller manage multiple tanks at the same time?",
-            "answer": "Yes. A multi tank controller is specifically designed to manage more than one tank from a single control unit. Depending on the system, it can handle two, four, or more tanks and coordinate pump operations across all of them. The control logic ensures tanks are filled in a prioritised sequence rather than all at once, which protects the pump and prevents supply imbalance."
-          },
-          {
-            "question": "Is a wireless multi tank controller better than a wired one?",
-            "answer": "For most apartments, housing societies, and commercial buildings, yes. Wired systems require cables to run between every sensor and the control unit, which in multi-storey buildings means significant installation work, wall cutting, and conduit running. Wireless systems use radio signals between sensors and the controller, eliminating that installation burden entirely. They are easier to install, easier to maintain, and equally reliable."
-          },
-          {
-            "question": "Can apartments and housing societies use automatic water tank controllers?",
-            "answer": "Yes, and they benefit most from them. Apartments and housing societies typically have multiple tanks across multiple floors, with pump management often assigned to maintenance staff who cannot be present continuously. An automatic multi tank controller removes the dependency on manual operation entirely, so the system manages itself around the clock, regardless of whether staff are present."
-          },
-          {
-            "question": "Does a multi tank controller save electricity?",
-            "answer": "Yes. Manual pump operation tends to leave pumps running longer than necessary, either because no one is watching the tank level, or because someone forgets to switch off. An automatic controller stops the pump the moment the tank reaches its full level. Over a month, this reduction in unnecessary pump runtime translates to a measurable reduction in electricity bills, particularly in large buildings with high-capacity pumps."
-          },
-          {
-            "question": "Is installation of a multi tank water level controller complicated?",
-            "answer": "For wireless systems, installation is straightforward. The sensors clip inside each tank and communicate wirelessly with the control unit, which connects to the pump's power supply. No cables need to run between tanks and the controller. In most residential and commercial installations, a qualified electrician can complete the setup in a few hours. Wired multi-tank systems take longer due to cable routing but are still a standard installation task."
-          },
-          {
-            "question": "What happens if the source water runs out, will the pump run dry?",
-            "answer": "A good multi tank controller includes dry-run protection. This means the system monitors the source, the underground sump or borewell, as well as the overhead tanks. If the source water level drops below a safe threshold, the controller stops the pump automatically before it can run without water. This protection is essential for buildings on borewell or inconsistent municipal supply."
-          }
-        ]
-      },
-      {
-        "slug": "water-level-controller-buying-guide",
-        "title": "Which Water Level Controller Should You Choose? A Complete Buying Guide",
-        "category": "Tips & Guides",
-        "categoryId": "guides",
-        "date": "31 Aug 2026",
-        "readTime": "8 min read",
-        "author": "Aquabrim Team",
-        "metaTitle": "Water Level Controller Buying Guide | Aquabrim",
-        "metaDescription": "Not sure which water level controller to buy? This complete guide covers all types, use cases, and what to check before buying — for Indian homes.",
-        "image": "/uploads/blogs-water-level-controller-buying-guide-india.webp",
-        "imageAlt": "Complete buying guide for water level controllers in India — types, comparison and tips",
-        "excerpt": "Float switch, electrode, ultrasonic, wireless or IoT? Every type of water level controller explained, who needs what, and the eight things to check before you spend a rupee.",
-        "tags": [
-          "Water Level Controller",
-          "Buying Guide",
-          "Water Automation India",
-          "Wireless Water Level Controller",
-          "Smart Water Level Controller"
-        ],
-        "quickAnswer": "A water level controller is a device that automatically monitors your tank level and controls your motor — so it switches on when water runs low and switches off when the tank is full. The right type depends on your water source: municipal supply, borewell, or multiple tanks. This guide explains every type, who needs what, and exactly what to check before you buy.",
-        "intro": [
-          "If you have ever come home to a tank that has been overflowing for hours, or woken up to no water because the motor ran dry overnight, you already understand the problem a water level controller is supposed to solve.",
-          "The harder question is which one. Walk into any electrical store or search online and you will find options ranging from a few hundred rupees to fifteen thousand. Some are mechanical, some wireless, some app-controlled. Each works differently, and each is suited to a specific type of home or water setup.",
-          "This guide cuts through the confusion. By the time you finish reading, you will know exactly which type fits your home, what features actually matter, and what mistakes to avoid before spending a single rupee."
-        ],
-        "sections": [
-          {
-            "heading": "What Is a Water Level Controller?",
-            "paragraphs": [
-              "A [water level controller](/) is a device that monitors the water level in your tank and automatically controls your motor based on what it detects. When the tank runs low, it starts the motor. When the tank is full, it stops the motor.",
-              "That sounds simple, and the basic concept is. But the technology behind it, and what it can do beyond basic on/off switching, varies significantly depending on the type you choose.",
-              "A good water level controller eliminates two of the most common and expensive water problems in Indian homes:"
-            ],
-            "bullets": [
-              "Tank overflow — water spilling onto your terrace or seeping through walls because no one switched the motor off in time",
-              "Motor dry run — the pump running without water in the source, which causes it to overheat and burn out within minutes"
-            ],
-            "paragraphsAfter": [
-              "A quality controller prevents both, automatically, without you having to think about it."
-            ],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Why Every Home, Apartment and Commercial Building Needs One",
-            "paragraphs": [
-              "Most Indian homes still manage water the same way they did twenty years ago: someone checks the tank, someone remembers to switch the motor, and when that does not happen, something goes wrong.",
-              "The scale of the problem is larger than most people realise. Motor burnouts from dry run are among the most common and avoidable appliance repair costs in Indian households. Water overflow on terraces causes seepage, structural damage, and wasted water, in a country where water scarcity is a genuine and growing concern in cities like Delhi, Bengaluru, and Chennai.",
-              "For commercial buildings and housing societies, the stakes are even higher. A building with three tanks and two borewells, managed manually, is a constant source of maintenance problems. A properly installed water level controller for apartment complexes removes most of that management burden permanently.",
-              "The question is not really whether you need one. The question is which one is right for your specific setup."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Different Types of Water Level Controllers",
-            "paragraphs": [
-              "There are five main types available in India. Each uses a different technology and suits a different situation."
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "",
-              "col2Label": "",
-              "rows": []
-            },
-            "subsections": [
-              {
-                "heading": "Float Switch Water Level Controller",
-                "paragraphs": [
-                  "The float switch is the oldest and most basic type. A mechanical float sits on the water surface and physically opens or closes an electrical contact as the water level rises or falls.",
-                  "It works, but with limitations. The float can get stuck in a fixed position due to mineral deposits or physical obstruction, leaving your motor running when it should be off, or off when it should be on. It also offers no dry-run protection, no alerts, and no remote monitoring.",
-                  "Float switches are suitable for very basic single-tank setups where reliability requirements are low and budgets are tight. For anything more demanding, they fall short."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Electrode-Based Water Level Controller",
-                "paragraphs": [
-                  "Electrode-based controllers use metal probes inserted at different heights inside the tank. When water touches a probe, it completes a circuit and the controller responds accordingly.",
-                  "These are more reliable than float switches and were the standard technology for many years. The main drawback is that hard water, which is common across much of India, causes mineral deposits to build up on the probes over time, reducing accuracy and eventually requiring cleaning or replacement.",
-                  "They work well in areas with soft water and are still a practical choice for standard residential setups where maintenance is manageable."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Ultrasonic Water Level Controller",
-                "paragraphs": [
-                  "Ultrasonic controllers measure water level using sound waves. The sensor is mounted above the water surface and sends a pulse downward, and the time it takes to reflect back tells the system exactly how full the tank is.",
-                  "Because the sensor never touches the water, there is no mineral buildup or corrosion. Accuracy is high. These are particularly well suited to tanks where hygiene matters, since there is no contact between the sensor and the stored water.",
-                  "The trade-off is cost — ultrasonic sensors are more expensive than electrode-based options — and the need for careful installation to avoid false readings from tank walls or fittings."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Wireless Water Level Controller",
-                "paragraphs": [
-                  "Wireless controllers replace the cable between the tank sensor and the motor panel with a radio signal. The sensor sits inside the tank and communicates wirelessly with the control unit mounted near your motor, with no cables required between the two.",
-                  "This is now the most practical choice for the majority of Indian homes. Running cables from a rooftop tank to a ground-floor motor panel typically means cutting through walls, running conduit across open terraces, and significant installation work. Wireless systems avoid all of that.",
-                  "Modern wireless controllers are highly reliable, work through walls and floors, and are designed to handle the interference and range requirements of typical Indian residential buildings. A quality [wireless water level controller](/products) typically covers 30 to 100 metres, which is sufficient for most homes and apartment buildings."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "IoT-Based Smart Water Level Controller",
-                "paragraphs": [
-                  "IoT controllers take automation further by connecting to your WiFi and a mobile app. You can see tank levels in real time, receive alerts when the tank is low or overflowing, check motor status, and in some systems start or stop the motor remotely, all from your phone.",
-                  "For homeowners who travel, residents whose tank is on an inaccessible rooftop, and facility managers overseeing multiple buildings, this visibility is genuinely valuable. You stop finding out something went wrong after it already has.",
-                  "IoT controllers are the fastest-growing segment of the water automation market in India, and for good reason: the additional cost is modest relative to the peace of mind they provide."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              }
-            ]
-          },
-          {
-            "heading": "The Five Types Compared at a Glance",
+            "heading": "Before You Start — What You Need to Know",
             "paragraphs": [],
             "bullets": [],
             "paragraphsAfter": [],
             "highlight": {
-              "title": "",
-              "text": ""
+              "title": "Important safety notice",
+              "text": "Aquabrim controllers connect to your motor's 220V AC power supply. The controller-to-motor wiring must be done by a qualified electrician. Sensor placement in tanks is safe and can be done by any capable adult. Never connect or touch power wiring without switching off the mains supply first."
             },
             "table": {
-              "col1Label": "Type",
-              "col2Label": "Technology, best use, reliability and cost",
-              "rows": [
-                {
-                  "label": "Float Switch",
-                  "value": "Mechanical float. Best for basic single-tank homes. Reliability: medium, can get stuck. Cost: ₹300–800."
-                },
-                {
-                  "label": "Electrode-Based",
-                  "value": "Metal probes in the water. Best for older apartment buildings. Reliability: medium, mineral buildup over time. Cost: ₹600–1,500."
-                },
-                {
-                  "label": "Ultrasonic",
-                  "value": "Sound waves, no contact with water. Best for clean water tanks and high accuracy needs. Reliability: high, no physical contact. Cost: ₹2,000–6,000."
-                },
-                {
-                  "label": "Wireless",
-                  "value": "Radio signal between sensor and controller. Best for any home where wiring is not possible. Reliability: high, modern and durable. Cost: ₹3,000–10,000."
-                },
-                {
-                  "label": "IoT / Smart",
-                  "value": "WiFi plus mobile app. Best for tech-savvy users and remote monitoring. Reliability: very high, full visibility. Cost: ₹5,000–15,000+."
-                }
-              ]
-            },
-            "subsections": []
-          },
-          {
-            "heading": "Which Water Level Controller Is Best for Different Applications?",
-            "paragraphs": [
-              "The right controller depends on your water source, the number of tanks you have, and the complexity of your setup. Here is a practical breakdown:"
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "Setup and water source",
-              "col2Label": "Recommended type and key requirement",
-              "rows": [
-                {
-                  "label": "Individual home or villa on municipal supply",
-                  "value": "Wireless or IoT controller. Key requirement: capture water the moment supply arrives."
-                },
-                {
-                  "label": "Individual home or villa on borewell",
-                  "value": "Wireless with dry-run protection. Key requirement: the motor must stop when the source runs low."
-                },
-                {
-                  "label": "Apartment with a single tank (municipal or borewell)",
-                  "value": "Wireless automatic controller. Key requirement: simple, cable-free, automatic operation."
-                },
-                {
-                  "label": "Housing society or RWA on municipal plus borewell",
-                  "value": "Multi-tank IoT controller. Key requirement: centralised control of the entire system."
-                },
-                {
-                  "label": "Commercial building on municipal plus borewell",
-                  "value": "Industrial-grade IoT system. Key requirement: remote monitoring, alerts and logs."
-                },
-                {
-                  "label": "Factory or industry with multiple sources",
-                  "value": "SCADA-compatible IoT controller. Key requirement: integration with existing plant systems."
-                }
-              ]
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
             },
             "subsections": []
           },
           {
             "heading": "",
             "paragraphs": [
-              "If you are unsure which category your home falls into, the safest starting point is a wireless controller with dry-run protection: it covers the most common residential scenarios and avoids the most expensive mistakes."
+              "With the safety note clear, here is what to have ready before you begin:"
+            ],
+            "bullets": [
+              "A qualified electrician on hand or booked — required for the motor wiring step",
+              "A standard masonry drill with plugs — for wall mounting the controller",
+              "A screwdriver and cable ties — included in the kit, but having extras helps",
+              "A ladder or safe access to the overhead tank — for sensor placement",
+              "Your motor starter panel location confirmed — the controller mounts near this",
+              "A smartphone with the Google Play Store — for the Aquabrim app setup at the end"
+            ],
+            "paragraphsAfter": [],
+            "highlight": {
+              "title": "",
+              "text": ""
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "What's in the Aquabrim Box",
+            "paragraphs": [
+              "Open the box and confirm all components are present. Every Aquabrim kit comes with:"
+            ],
+            "bullets": [
+              "Controller unit — Trigger, Macro or Matrix, depending on your model",
+              "Overhead tank (OH) level transmitter with holder",
+              "Underground tank (UG) level transmitter with holder — for Macro and Matrix models",
+              "Mounting hardware — wall screws, plugs and cable ties",
+              "Built-in fuse plus 2 spare fuses inside the controller",
+              "Optional flow sensor — for models that support flow detection",
+              "Quick-start instruction sheet"
+            ],
+            "paragraphsAfter": [
+              "The Aquabrim app for Android and web is downloaded separately — the link is provided in the instruction sheet."
+            ],
+            "highlight": {
+              "title": "",
+              "text": ""
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "Installation Overview — 6 Steps",
+            "paragraphs": [
+              "Here is the full installation process at a glance before going into each step in detail:"
+            ],
+            "bullets": [
+              "Step 1: Choose the right location — the mount point for the controller, near your motor starter",
+              "Step 2: Install the OH tank transmitter — fix the wireless sensor inside your overhead tank",
+              "Step 3: Install the UG or borewell transmitter — fix the second sensor in your underground tank or borewell (Macro and Matrix)",
+              "Step 4: Mount the controller on the wall — drill and fix the controller unit at the chosen location",
+              "Step 5: Connect the controller to the motor circuit — the electrician connects Live, Neutral and motor wires",
+              "Step 6: Power on, test and set up the app — switch on, verify the LED indicators, download the Aquabrim app"
+            ],
+            "paragraphsAfter": [],
+            "highlight": {
+              "title": "",
+              "text": ""
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "Step 1 — Choose the Right Location for the Controller",
+            "paragraphs": [
+              "Before fixing anything, decide where the controller unit will be mounted. The right location makes the wiring cleaner, the LED indicators visible, and long-term maintenance easier.",
+              "The controller should be mounted on a dry, protected wall — ideally close to your motor starter panel or the electrical switchboard that controls the motor. This keeps the wiring between the controller and the motor as short as possible.",
+              "Aquabrim controllers must not be exposed to rain, water splashes, dust, or direct sunlight. If the motor panel is in an open area — a common situation in Indian homes where the motor switch is near the water pump outside or in a utility room — use a non-metallic protective enclosure around the controller.",
+              "The wireless transmitters in the tanks communicate with the controller over radio frequency. In most standard Indian residential buildings, the signal travels through walls and across floors without issue. If the building is large or has reinforced concrete that blocks signal, Aquabrim's Wireless Signal Booster can extend the range."
             ],
             "bullets": [],
             "paragraphsAfter": [],
@@ -1374,60 +147,13 @@
             "subsections": []
           },
           {
-            "heading": "Factors to Consider Before Choosing a Water Level Controller",
+            "heading": "Step 2 — Install the Overhead Tank Transmitter",
             "paragraphs": [
-              "Before you decide, work through these eight questions. Your answers will narrow the field considerably:"
-            ],
-            "bullets": [],
-            "paragraphsAfter": [],
-            "highlight": {
-              "title": "",
-              "text": ""
-            },
-            "table": {
-              "col1Label": "Factor",
-              "col2Label": "What to check, and why it matters",
-              "rows": [
-                {
-                  "label": "Water source",
-                  "value": "Municipal supply, borewell, or both? This determines which controller type fits."
-                },
-                {
-                  "label": "Number of tanks",
-                  "value": "One overhead tank or multiple? Multi-tank setups need a system controller, not a basic unit."
-                },
-                {
-                  "label": "Wiring feasibility",
-                  "value": "Can cables run between the tank and the motor? If not, wireless is the only practical option."
-                },
-                {
-                  "label": "Motor type",
-                  "value": "Monoblock, submersible, or centrifugal? The controller must be compatible with your motor specifications."
-                },
-                {
-                  "label": "Dry-run protection",
-                  "value": "Is the borewell source level monitored? Without this, motors burn out when the source runs dry."
-                },
-                {
-                  "label": "Remote monitoring",
-                  "value": "Do you need app-based alerts? IoT models add visibility; basic models do not."
-                },
-                {
-                  "label": "Budget",
-                  "value": "One-time cost against long-term value. Cheaper units cost more in maintenance and motor repairs."
-                },
-                {
-                  "label": "Brand and warranty",
-                  "value": "Is after-sales support available in India? A local brand with a service network matters for longevity."
-                }
-              ]
-            },
-            "subsections": []
-          },
-          {
-            "heading": "",
-            "paragraphs": [
-              "One factor that is often overlooked: after-sales support. A controller that breaks down six months after installation is only useful if someone can fix it. Choose a brand with a service network and a clear warranty policy, especially for installations in cities where the brand has an established presence."
+              "The overhead tank (OH) transmitter is the wireless sensor that monitors your main storage tank — the one on the roof or terrace that supplies water to your taps.",
+              "Take the OH transmitter and its holder from the kit. The holder is designed to clip or fix to the inside wall of the tank, keeping the sensor submerged at the correct depth to measure the full range of water levels.",
+              "Place the transmitter inside the tank using the holder. The sensor automatically calibrates to the tank's full level once powered. Aquabrim transmitters send level data wirelessly from 1% to 120% — meaning they can detect both how full the tank is and whether it is overflowing beyond its rated capacity.",
+              "The transmitters run on AA-size batteries that last more than four years. They do not require any external power source or wiring — once placed and the batteries are inserted, they begin transmitting immediately.",
+              "Secure the holder firmly inside the tank using the cable ties provided. The sensor should be positioned vertically so it can read the full depth of water from empty to full."
             ],
             "bullets": [],
             "paragraphsAfter": [],
@@ -1443,9 +169,12 @@
             "subsections": []
           },
           {
-            "heading": "Aquabrim's Water Level Controller Solutions",
+            "heading": "Step 3 — Install the Underground Tank or Borewell Transmitter",
             "paragraphs": [
-              "Aquabrim has been building water level controllers for Indian homes and industries since 2008. Rather than offering one product for every situation, Aquabrim's approach is to make a dedicated system for each type of water setup. Here is where each product fits:"
+              "This step applies to the Macro (borewell or submersible pump) and Matrix (multi-tank) models. If you are installing the Trigger for a municipal supply line only, skip to Step 4.",
+              "The underground tank (UG) transmitter monitors your water source — either an underground storage tank that is filled by municipal supply, or the borewell itself. Monitoring this source is what enables Aquabrim's dry-run protection: if the source runs low, the controller stops the motor before it can run without water.",
+              "Fix the UG transmitter inside the underground tank or borewell using the second holder from the kit. The installation process is the same as the OH transmitter — position it vertically, secure it with cable ties, and insert the batteries. No wiring is required.",
+              "If you are using the Matrix model for multiple overhead tanks, install an additional wireless transmitter in each tank. Each transmitter communicates independently to the controller, and the controller displays the level of every tank — labelled by tank number — on its digital display."
             ],
             "bullets": [],
             "paragraphsAfter": [],
@@ -1458,57 +187,15 @@
               "col2Label": "",
               "rows": []
             },
-            "subsections": [
-              {
-                "heading": "Matrix Multi Tank Controller — For Buildings with Multiple Tanks",
-                "paragraphs": [
-                  "The [Matrix Multi Tank Controller](/products/matrix-multi-tank-controller) is designed for housing societies, commercial buildings, and any installation where more than two tanks need to be managed from a single system. Instead of installing separate controllers for each tank, the Matrix manages the entire setup, including pumps, tanks, and sources, from one central unit.",
-                  "It is the practical choice for RWAs and facility managers who currently manage water manually across multiple tanks."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Macro Borewell Water Controller — For Borewell and Submersible Pump Homes",
-                "paragraphs": [
-                  "The [borewell water level controller Macro](/products/macro-borewell-water-controller) monitors both the underground source and the overhead tank. If the source water runs too low, it stops the motor before dry-run damage can occur. For homes on borewell or submersible pump, this is the essential feature that basic controllers miss entirely.",
-                  "Anyone who has paid for a motor burnout repair will immediately understand why this matters."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Trigger Municipal Water Controller — For Municipal Supply Homes",
-                "paragraphs": [
-                  "The [municipal water controller Trigger](/products/trigger-municipal-water-controller) is built for homes where water arrives on an unpredictable schedule, typically early morning or at odd hours. It detects when water pressure arrives in the supply line and automatically starts the motor, without requiring anyone to be awake or present.",
-                  "This is particularly relevant for homes in Delhi, Noida, Gurgaon, and other cities where municipal supply timing is inconsistent and missing it means waiting another day."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Flexibell Water Level Alarm — For Monitoring Without Full Automation",
-                "paragraphs": [
-                  "The [water level alarm Flexibell](/products/flexibell-water-level-alarm) is for setups that need water level awareness and alerts but not full motor automation. It sends wireless alerts when the tank reaches a set level, useful for homes where motor control is manual but you want to stop relying on someone physically checking the tank."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              },
-              {
-                "heading": "Wireless Water Level Transmitter — For Precise Level Measurement",
-                "paragraphs": [
-                  "The [wireless water level transmitter](/products/wireless-water-level-transmitter-capacitive) provides continuous, accurate level readings transmitted wirelessly. It is particularly suited to industrial and commercial applications where knowing the exact percentage of tank capacity at any moment is necessary for operations or billing purposes.",
-                  "All Aquabrim products use wireless sensor technology, connect to the Aquabrim mobile app for remote monitoring, and are backed by the company's 16+ years of installation experience across homes, hotels, government facilities, and industrial plants in India."
-                ],
-                "bullets": [],
-                "paragraphsAfter": []
-              }
-            ]
+            "subsections": []
           },
           {
-            "heading": "Common Mistakes People Make While Choosing a Water Level Controller",
+            "heading": "Step 4 — Mount the Controller on the Wall",
             "paragraphs": [
-              "Most buying regrets in this category come from one of five predictable mistakes. Knowing them in advance costs nothing:"
+              "Take the controller unit and hold it against the wall at your chosen location. Mark the mounting hole positions with a pencil. Using a standard masonry drill and the wall plugs provided, drill the holes and fix the mounting screws.",
+              "Mount the controller on the screws. The unit should sit flush against the wall, stable and secure. Check that the LED indicator panel is visible from a normal standing position — you will refer to these indicators regularly to confirm system status.",
+              "The LED indicators on Aquabrim controllers include Overflow, Flow On, Motor On, UG Level, and Alert (E-XX) indicators. The controller also has a Manual Trigger button — pressing and holding this for five seconds starts the motor immediately and fills all connected overhead tanks, stopping automatically once full. This is useful for testing after installation.",
+              "At this stage, do not connect any power wiring yet. The controller should be mounted and positioned, but all electrical connections happen in the next step with the electrician."
             ],
             "bullets": [],
             "paragraphsAfter": [],
@@ -1517,45 +204,117 @@
               "text": ""
             },
             "table": {
-              "col1Label": "Common mistake",
-              "col2Label": "Why it goes wrong, and what to do instead",
-              "rows": [
-                {
-                  "label": "Buying on price alone",
-                  "value": "Cheap controllers often lack dry-run protection, leading to motor burnout within months. Instead: compare features first, then price, and calculate total cost including maintenance."
-                },
-                {
-                  "label": "Using one controller for multiple tanks",
-                  "value": "A single-tank controller does not manage two or three tanks effectively. Instead: use a multi-tank system like a matrix controller for buildings with more than one tank."
-                },
-                {
-                  "label": "Ignoring wiring requirements",
-                  "value": "Running cables from a rooftop tank to a ground-floor motor panel is expensive and invasive. Instead: choose wireless from the start, which saves installation cost and avoids wall cutting."
-                },
-                {
-                  "label": "Wrong controller for borewell",
-                  "value": "Municipal supply controllers do not monitor source water, so the motor runs dry and burns out. Instead: for borewell, always choose a controller with source-level monitoring and dry-run cutoff."
-                },
-                {
-                  "label": "Not using app-based monitoring",
-                  "value": "Users do not know if the system is working until the tank is already empty or overflowing. Instead: IoT controllers with alerts give you real-time status from anywhere, worth the extra cost."
-                }
-              ]
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "Step 5 — Connect the Controller to the Motor Circuit",
+            "paragraphs": [
+              "This is the step that requires a qualified electrician. Do not attempt it yourself if you are not trained to work with 220V AC electrical circuits.",
+              "The Aquabrim controller installs in parallel to your existing motor switch. This is an important point — your existing manual motor switch is not removed or replaced. The controller simply takes over automatic switching while the manual switch remains fully functional as a backup override for whenever you need manual control.",
+              "The electrician will connect the Live wire, Neutral wire, and the motor control wires between the controller and the motor starter panel. The exact wiring diagram for your specific model is printed inside the controller unit cover and in the instruction sheet included in the kit.",
+              "Once wired, the electrician should verify the connections are secure and there are no exposed wires before switching the power on. The controller has a built-in fuse for protection — if the fuse trips during installation, two spare fuses are included inside the controller unit.",
+              "Switch on the mains supply and observe the LED indicators. The Power indicator should come on. If the motor is not currently needed because the tank is not low, the Motor On indicator should remain off. This confirms the controller is receiving power and is in automatic standby mode."
+            ],
+            "bullets": [],
+            "paragraphsAfter": [],
+            "highlight": {
+              "title": "",
+              "text": ""
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "Step 6 — Power On, Test, and Set Up the Aquabrim App",
+            "paragraphs": [
+              "With power connected and the controller running, the transmitters in the tanks should now be communicating with the controller wirelessly. The tank level display — which shows the water level of each connected tank as a percentage — should be showing a reading.",
+              "Do a quick functional test before finalising the installation. Press and hold the Manual Trigger button on the controller for five seconds until you hear a beep. The motor should start and begin filling the overhead tank. Watch the tank level percentage climb on the display. When the tank reaches full, the controller should stop the motor automatically. If this works correctly, the installation is functioning as expected.",
+              "Now set up the Aquabrim app for remote monitoring. Download the Aquabrim app from the Google Play Store on your Android phone, or access the web platform at aquabrim.co.in from any browser. Follow the pairing instructions in the app to connect it to your controller. Once connected, you can see live tank level data, motor status, and receive real-time alerts on your phone — including overflow warnings, dry-run alerts, and motor fault notifications.",
+              "Check that the Smart Scheduling feature is configured if it is relevant to your setup. Aquabrim supports scheduled pump operation for situations where you want the motor to operate only within specific time windows — useful for buildings in areas with predictable supply timing."
+            ],
+            "bullets": [],
+            "paragraphsAfter": [],
+            "highlight": {
+              "title": "",
+              "text": ""
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "Post-Installation Checks — Make Sure Everything Is Working",
+            "paragraphs": [
+              "Once the installation is complete and the app is connected, run through these checks before considering the setup finished:"
+            ],
+            "bullets": [
+              "LED indicators on the controller show the correct status — Power on, Motor off when the tank is full",
+              "The tank level percentage on the display matches the approximate actual level in the tank",
+              "The motor starts automatically when the tank level drops below 50% (for Macro) or the set threshold",
+              "The motor stops automatically when the tank reaches full level — no manual intervention needed",
+              "The overflow indicator does not trigger during normal operation",
+              "The app is showing live data — tank level, motor status, and any active alerts",
+              "The Manual Trigger button works — the motor starts on hold and stops automatically once the tank is full",
+              "The existing manual motor switch still works as an override when the controller is powered"
+            ],
+            "paragraphsAfter": [
+              "If any of these checks fail, refer to the Alert indicator on the controller. Error codes display as E-XX on the controller's display — the instruction sheet lists what each code means and the corresponding fix. For issues that cannot be resolved by the instruction sheet, contact Aquabrim support directly at +91-9560088791 or through the [contact page](/contact-us)."
+            ],
+            "highlight": {
+              "title": "",
+              "text": ""
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
+            },
+            "subsections": []
+          },
+          {
+            "heading": "Ongoing Maintenance — What to Do After Installation",
+            "paragraphs": [
+              "Aquabrim systems are designed for long-term, low-maintenance operation. If the system and controller are used as per the recommended guidelines, they are built to last more than ten years. The only routine maintenance task is replacing the transmitter batteries.",
+              "Replace the AA batteries in each transmitter every three to four years, or when the controller's display shows a low-battery alert for a specific transmitter. Battery replacement takes under two minutes per transmitter — remove the old batteries, insert new AA cells, and the transmitter resumes normal operation immediately.",
+              "Keep the controller unit clean and free from dust. Do not spray water near it. If you notice any physical damage to the controller casing or wiring, contact Aquabrim before attempting any repair.",
+              "If you add a new tank to your building in future, additional wireless transmitters can be added to the system without replacing the controller — particularly for Matrix models. Contact Aquabrim to confirm compatibility with your specific controller model before purchasing additional sensors."
+            ],
+            "bullets": [],
+            "paragraphsAfter": [],
+            "highlight": {
+              "title": "Need help choosing a model or booking an installation?",
+              "text": "Aquabrim offers expert support, installation guidance, and after-sales service across India. Contact the team directly to get a recommendation for your specific setup or to book an assisted installation. [Talk to the Aquabrim team](/contact-us) or [explore all Aquabrim products](/products)."
+            },
+            "table": {
+              "col1Label": "",
+              "col2Label": "",
+              "rows": []
             },
             "subsections": []
           },
           {
             "heading": "Conclusion",
             "paragraphs": [
-              "The water level controller market in India has evolved significantly in the last decade. What used to be a choice between a basic float switch and a slightly less basic electrode unit is now a choice between genuinely capable systems: wireless, app-connected, multi-tank, and built with Indian water conditions in mind.",
-              "The right choice comes down to your water source, your tank configuration, and how much visibility you want into your water system. For most Indian homes today, a wireless controller with dry-run protection covers the essential bases. For more complex setups, such as borewells, multiple tanks, or commercial buildings, a dedicated system designed for that specific use case will perform far better and cost less in the long run.",
-              "Take ten minutes to answer the eight questions in the factors table above. You will know which category you fall into, and the right product will become obvious."
+              "Installing an Aquabrim [water level controller](/) is a straightforward process that most homes complete in a single afternoon. The wireless sensor design eliminates the most labour-intensive part of older installations — running cables between tanks — and leaves you with a clean, maintenance-free setup that works automatically from day one.",
+              "The six steps in this guide — choosing the location, placing the transmitters, mounting the controller, wiring to the motor, testing, and setting up the app — apply to all standard Aquabrim residential and commercial installations. Follow them in order, work with a qualified electrician for the wiring step, and the system will be running reliably within a few hours.",
+              "For model-specific questions, installation support in Delhi NCR, or to explore the full range of [Aquabrim products](/products), contact the team directly. Aquabrim has been installing water automation systems across India since 2008 — the support team knows the product inside out."
             ],
             "bullets": [],
             "paragraphsAfter": [],
             "highlight": {
-              "title": "Not sure which Aquabrim system is right for your home?",
-              "text": "Every home has a different water setup, and the right choice depends on your source, your tanks, and your building. Aquabrim's team can help you pick the correct system in minutes. [See all water level controllers](/products) or [talk to the team](/contact-us)."
+              "title": "",
+              "text": ""
             },
             "table": {
               "col1Label": "",
@@ -1567,57 +326,39 @@
         ],
         "faqs": [
           {
-            "question": "What is the difference between a water level controller and a float switch?",
-            "answer": "A float switch is a basic mechanical device that opens or closes a circuit based on water level. A water level controller is a complete system that includes sensors, a control unit, and often dry-run protection, time delay, and remote monitoring features. Float switches can jam or wear out; modern controllers are electronic and far more reliable."
+            "question": "How long does Aquabrim installation take?",
+            "answer": "For a standard single-tank residential installation, a qualified electrician typically completes the full setup — sensor placement, controller mounting, and motor wiring — in two to four hours. Multi-tank or commercial installations may take longer depending on the number of sensors and the distance between tanks."
           },
           {
-            "question": "Which water level controller is best for a borewell?",
-            "answer": "For a borewell or submersible pump setup, you need a controller with source-level monitoring and dry-run protection. The controller must monitor the underground source, not just the overhead tank, and stop the motor automatically if the source water runs too low. A standard single-tank controller is not sufficient for a borewell setup."
+            "question": "Do I need a professional electrician to install Aquabrim?",
+            "answer": "The sensor placement in the tank is safe and straightforward — any capable adult can handle it. However, connecting the controller to the motor circuit involves 220V AC wiring and must be done by a qualified electrician. Aquabrim includes clear wiring instructions, and the team can provide remote guidance or arrange installation support in Delhi NCR."
           },
           {
-            "question": "Can I use a wireless water level controller without running new cables?",
-            "answer": "Yes. Wireless controllers use radio signals between the sensor in the tank and the control unit near the motor, so no cables are required between the two points. This is the main reason wireless controllers are preferred in homes where running cables through walls or across terraces is impractical."
+            "question": "Can Aquabrim be installed without running any cables between tanks?",
+            "answer": "Yes. Aquabrim uses RF-based wireless sensor technology. The transmitters in the tanks send level data to the controller wirelessly — no cables need to run between the tank and the controller unit. Only the controller itself requires a mains power connection and wiring to the motor circuit."
           },
           {
-            "question": "How does an IoT water level controller work?",
-            "answer": "An IoT controller connects to your home WiFi and sends real-time data to a mobile app. You can check the tank level, see whether the motor is running, and receive alerts for overflow risk or dry-run conditions, from anywhere. Some systems also allow you to manually start or stop the motor from the app."
+            "question": "Which Aquabrim model should I install — Trigger or Macro?",
+            "answer": "Choose Trigger if your home is connected to a municipal (corporation) water supply line — it detects when water arrives in the pipe and starts the motor automatically. Choose Macro if your water comes from a borewell or submersible pump — it monitors both the source and the overhead tank, with built-in dry-run protection. For multiple tanks, the Matrix is the right choice."
           },
           {
-            "question": "What is dry-run protection and do I need it?",
-            "answer": "Dry-run protection stops the motor automatically when the water source (borewell or sump) runs too low, preventing motor burnout. If you are on a borewell or submersible pump, dry-run protection is essential — without it, the motor can burn out within minutes of running dry, costing thousands in repairs."
+            "question": "Where should the controller be mounted?",
+            "answer": "The controller should be mounted on a wall near your motor starter panel, in a dry and well-protected location. It must not be exposed to rain, water splashes, dust, or direct sunlight. If the location is in an exposed area, use a non-metallic protective enclosure as recommended by Aquabrim."
           },
           {
-            "question": "Is a water level controller suitable for a housing society with multiple tanks?",
-            "answer": "Yes, but you need a multi-tank or matrix controller rather than a basic single-tank unit. A matrix-type controller manages multiple tanks and pumps from a single system, which is far more practical and cost-effective for housing societies and commercial buildings than installing individual controllers for each tank."
+            "question": "How is the controller connected to the existing motor switch?",
+            "answer": "Aquabrim controllers are installed in parallel to your existing motor switch. This means your existing manual switch remains in place and functional. The controller simply takes over automatic operation while the manual switch remains available as a backup override."
           },
           {
-            "question": "How long does a wireless water level controller last?",
-            "answer": "A quality wireless water level controller from a reputable brand typically lasts 8 to 12 years with minimal maintenance. The wireless sensor and control unit are sealed electronic components with no moving parts, making them more durable than mechanical float switches that require periodic cleaning and replacement."
+            "question": "How long do the transmitter batteries last?",
+            "answer": "The Aquabrim wireless transmitters run on AA-size batteries that last more than four years under normal operating conditions. The sensors automatically calibrate to the tank's full level and send data wirelessly from 1% to 120% — no external power source is required for the sensors themselves."
           },
           {
-            "question": "What should I check before buying a water level controller in India?",
-            "answer": "Check your water source type (municipal or borewell), number of tanks, motor type and capacity, wiring feasibility, and whether you need remote monitoring. Also verify that the brand offers after-sales support and a warranty of at least one year. Buying on price alone is the most common mistake — the cheapest options often lack dry-run protection."
+            "question": "What happens after installation — is there any setup required?",
+            "answer": "After the physical installation, power on the controller and verify the LED indicators: Overflow, Flow On, Motor On, UG Level, and Fuse indicators should all show correctly. Download the Aquabrim app from the Google Play Store or access the web platform at aquabrim.co.in to connect the controller to your phone for real-time monitoring and alerts."
           }
         ]
       }
     ]
-  },
-  "featured": {
-    "widgetHeading": "Featured Post",
-    "postSlug": ""
-  },
-  "newsletter": {
-    "heading": "Stay Updated",
-    "body": "Subscribe to our newsletter and get the latest insights and updates.",
-    "placeholder": "Enter your email",
-    "buttonText": "Subscribe"
-  },
-  "cta": {
-    "title": "Reliable Water Management Starts Here",
-    "subtitle": "Explore automation solutions trusted across industries and homes.",
-    "btnText": "View Systems",
-    "btnLink": "/products",
-    "icon": "bi-droplet-half",
-    "btnIcon": "bi-grid-fill"
   }
 }
