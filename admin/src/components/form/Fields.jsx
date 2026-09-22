@@ -1,11 +1,18 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import ImageField from './ImageField';
+import TableField from './TableField';
+import { buildLinkInsert, selectionOf } from './insertLink';
 import { mediaUrl } from '../../lib/media';
 
 // Renders ONE field based on its schema `type`.
-// Supported types: text, textarea, richtext, url, number, boolean, image, list.
+// Supported types: text, textarea, richtext, url, number, boolean, image, list,
+// group, table.
 export function Field({ field, value, onChange }) {
   const { type, label, help, placeholder } = field;
+
+  if (type === 'table') {
+    return <TableField field={field} value={value} onChange={onChange} />;
+  }
 
   if (type === 'list') {
     // Long lists (products, blog posts) render as a compact table you click into,
@@ -48,7 +55,7 @@ export function Field({ field, value, onChange }) {
         {label}
         {help && <span className="muted"> — {help}</span>}
       </label>
-      {renderInput(type, value, onChange, placeholder, maxLength)}
+      {renderInput(type, value, onChange, placeholder, maxLength, field)}
       {counted && (
         <div className={`char-count ${len >= maxLength ? 'at-limit' : ''}`}>
           {len} / {maxLength}
@@ -58,19 +65,33 @@ export function Field({ field, value, onChange }) {
   );
 }
 
-function renderInput(type, value, onChange, placeholder, maxLength) {
+function renderInput(type, value, onChange, placeholder, maxLength, field) {
   switch (type) {
     case 'textarea':
-    case 'richtext':
+    case 'richtext': {
+      const rows = type === 'richtext' ? 6 : 3;
+      // Fields that make up the body of an article can carry inline links.
+      if (field?.linkable) {
+        return (
+          <LinkableTextarea
+            rows={rows}
+            value={value}
+            maxLength={maxLength}
+            placeholder={placeholder}
+            onChange={onChange}
+          />
+        );
+      }
       return (
         <textarea
-          rows={type === 'richtext' ? 6 : 3}
+          rows={rows}
           value={value ?? ''}
           maxLength={maxLength}
           onChange={(e) => onChange(e.target.value)}
           placeholder={placeholder}
         />
       );
+    }
     case 'image':
       return <ImageField value={value} onChange={onChange} />;
     case 'number':
@@ -368,9 +389,48 @@ function blankItem(itemFields) {
   const obj = {};
   for (const f of itemFields) {
     if (f.type === 'list') obj[f.key] = [];
+    else if (f.type === 'table') obj[f.key] = { columns: [], rows: [] };
     else if (f.type === 'group') obj[f.key] = {};
     else if (f.type === 'boolean') obj[f.key] = false;
     else obj[f.key] = '';
   }
   return obj;
+}
+
+// A textarea with a "Link" button: select some words, press it, give a target,
+// and the selection becomes [label](target) in the stored copy. The site turns
+// that into a real anchor — nobody has to type HTML or remember the brackets.
+function LinkableTextarea({ value, onChange, rows, maxLength, placeholder }) {
+  const ref = useRef(null);
+
+  const addLink = () => {
+    // Read the selection before the prompts steal focus.
+    const { start, end } = selectionOf(ref.current, value);
+    const result = buildLinkInsert(value, start, end, maxLength);
+    if (!result) return;
+    onChange(result.text);
+    requestAnimationFrame(() => {
+      ref.current?.focus();
+      ref.current?.setSelectionRange(result.caret, result.caret);
+    });
+  };
+
+  return (
+    <>
+      <textarea
+        ref={ref}
+        rows={rows}
+        value={value ?? ''}
+        maxLength={maxLength}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder={placeholder}
+      />
+      <div className="linkable-bar">
+        <button type="button" className="btn btn-ghost btn-xs" onClick={addLink}>
+          <i className="bi bi-link-45deg"></i> Link
+        </button>
+        <span className="muted">Select the words you want to link, then press Link.</span>
+      </div>
+    </>
+  );
 }

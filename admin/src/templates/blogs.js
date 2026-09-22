@@ -5,6 +5,8 @@
 // copy job:
 //
 //   1. Publishing    <- the "URL SLUG / H1 / AUTHOR / DATE" block of the doc
+//                       The date also sets the order of the blog listing, which
+//                       runs newest first.
 //   2. SEO           <- the "META TITLE / META DESC" block
 //   3. Card & Image  <- the listing card + the big image on the article page
 //   4. Article       <- "LIVE BLOG CONTENT": quick answer, intro, then one
@@ -26,11 +28,11 @@
 const subsectionFields = [
   { key: 'heading', label: 'Sub-heading (H3)', type: 'text', maxLength: 120 },
   { key: 'paragraphs', label: 'Paragraphs', type: 'list', itemLabel: 'Paragraph', maxItems: 8,
-    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900, linkable: true } },
   { key: 'bullets', label: 'Bullet points', type: 'list', itemLabel: 'Bullet', maxItems: 12,
-    itemField: { key: 'text', label: 'Bullet', type: 'textarea', maxLength: 300 } },
+    itemField: { key: 'text', label: 'Bullet', type: 'textarea', maxLength: 300, linkable: true } },
   { key: 'paragraphsAfter', label: 'Paragraphs after the bullets', type: 'list', itemLabel: 'Paragraph', maxItems: 5,
-    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900, linkable: true } },
 ];
 
 // One H2 section of the article. Renders strictly in this order:
@@ -39,28 +41,23 @@ const sectionFields = [
   { key: 'heading', label: 'Section heading (H2)', type: 'text', maxLength: 120,
     help: 'Also becomes an entry in the sticky table of contents on the left of the article' },
   { key: 'paragraphs', label: 'Paragraphs', type: 'list', itemLabel: 'Paragraph', maxItems: 10,
-    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+    help: 'Select words and press Link to turn them into a link',
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900, linkable: true } },
   { key: 'bullets', label: 'Bullet points', type: 'list', itemLabel: 'Bullet', maxItems: 12,
     help: 'Each one shows with a blue tick. Leave empty if this section has no bullets',
-    itemField: { key: 'text', label: 'Bullet', type: 'textarea', maxLength: 300 } },
+    itemField: { key: 'text', label: 'Bullet', type: 'textarea', maxLength: 300, linkable: true } },
   { key: 'paragraphsAfter', label: 'Paragraphs after the bullets', type: 'list', itemLabel: 'Paragraph', maxItems: 5,
-    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900, linkable: true } },
   { key: 'highlight', label: 'Highlight box (optional)', type: 'group',
     help: 'Blue tinted box — use for a "Quick fact" or a key takeaway. Leave both blank to hide it',
     fields: [
       { key: 'title', label: 'Box label', type: 'text', maxLength: 40, placeholder: 'Quick fact' },
-      { key: 'text', label: 'Box text', type: 'textarea', maxLength: 500 },
+      { key: 'text', label: 'Box text', type: 'textarea', maxLength: 500, linkable: true },
     ] },
-  { key: 'table', label: 'Two-column table (optional)', type: 'group',
-    help: 'Use for comparison / "feature vs benefit" tables. Leave the rows empty to hide it',
-    fields: [
-      { key: 'col1Label', label: 'Left column heading', type: 'text', maxLength: 60 },
-      { key: 'col2Label', label: 'Right column heading', type: 'text', maxLength: 60 },
-      { key: 'rows', label: 'Rows', type: 'list', itemLabel: 'Row', maxItems: 15, itemFields: [
-        { key: 'label', label: 'Left cell', type: 'text', maxLength: 80 },
-        { key: 'value', label: 'Right cell', type: 'textarea', maxLength: 500 },
-      ] },
-    ] },
+  { key: 'table', label: 'Table (optional)', type: 'table',
+    help: 'Add one column per heading — two for a simple "feature vs benefit" comparison, more for a spec or comparison table. Every row gets a cell for each column automatically. Leave it empty to hide the table',
+    maxColumns: 6, maxRows: 20, headingMaxLength: 60, cellMaxLength: 500 },
+  // (cells can carry links too — click into a cell, select words, press Link)
   { key: 'subsections', label: 'Sub-sections (optional)', type: 'list', itemLabel: 'Sub-section', maxItems: 5,
     help: 'Only if the doc has an H3 heading inside this section', itemFields: subsectionFields },
 ];
@@ -97,11 +94,11 @@ const postFields = [
     itemField: { key: 'tag', label: 'Tag', type: 'text', maxLength: 40 } },
 
   // ---- 4. Article ----------------------------------------------------------
-  { key: 'quickAnswer', label: 'Quick Answer', type: 'textarea', maxLength: 700,
+  { key: 'quickAnswer', label: 'Quick Answer', type: 'textarea', maxLength: 700, linkable: true,
     help: 'The highlighted box at the very top of the article — a direct 2-3 sentence answer. This is what Google pulls for featured snippets. Leave blank to hide it' },
   { key: 'intro', label: 'Intro paragraphs', type: 'list', itemLabel: 'Paragraph', maxItems: 6,
     help: 'The paragraphs that come before the first H2 heading',
-    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900 } },
+    itemField: { key: 'text', label: 'Paragraph', type: 'textarea', maxLength: 900, linkable: true } },
   { key: 'sections', label: 'Sections', type: 'list', itemLabel: 'Section', maxItems: 20,
     help: 'One Section per H2 heading in the doc, in order', itemFields: sectionFields },
 
@@ -110,7 +107,7 @@ const postFields = [
     help: 'Shown as an accordion at the end of the article and submitted to Google as FAQ schema',
     itemFields: [
       { key: 'question', label: 'Question', type: 'text', maxLength: 160 },
-      { key: 'answer', label: 'Answer', type: 'textarea', maxLength: 700 },
+      { key: 'answer', label: 'Answer', type: 'textarea', maxLength: 700, linkable: true },
     ] },
 ];
 
